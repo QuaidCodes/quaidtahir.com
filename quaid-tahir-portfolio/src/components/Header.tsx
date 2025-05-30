@@ -1,30 +1,61 @@
-export default function Header() {
-  return (
-    <>
-      <header className="w-full bg-">
-        <nav>
-          <ul className="flex justify-center">
-            <li className="nav-link">
-              <a href="">Quaid Tahir</a>
-            </li>
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-            <div>
-              <li className="nav-link">
-                <a href="">Projects</a>
-              </li>
-              <li className="nav-link">
-                <a href="">Portfolio</a>
-              </li>
-              <li className="nav-link">
-                <a href="">Blogs</a>
-              </li>
-              <li className="nav-link">
-                <a href="">Contact</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-      </header>
-    </>
+export default function Header() {
+  type NavLink = {
+    href: string;
+    label: string;
+  };
+
+  const navLinks: NavLink[] = [
+    {
+      href: "/",
+      label: "Home",
+    },
+    {
+      href: "/projects",
+      label: "Projects",
+    },
+    {
+      href: "/portfolio",
+      label: "Portfolio",
+    },
+    {
+      href: "/papers",
+      label: "Papers",
+    },
+    {
+      href: "/contact",
+      label: "Contact",
+    },
+  ];
+
+  // className={`px-3 py-2 rounded-md font-medium transition-colors ${
+  //                     isActive
+  //                       ? 'bg-blue-600 text-white dark:bg-blue-500'
+  //                       : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
+  //                   }`}
+  //                   aria-current={isActive ? 'page' : undefined}
+
+  return (
+    <header className="pt-3">
+      <nav>
+        <ul className="flex justify-between">
+          <li className="text-xl">Quaid Tahir</li>
+
+          <div className="flex">
+            {navLinks.map(({ href, label }) => {
+              return (
+                <li key={href}>
+                  <Link href={href} className="py-4 px-7 hover:underline ">
+                    {label}
+                  </Link>
+                </li>
+              );
+            })}
+          </div>
+        </ul>
+      </nav>
+    </header>
   );
 }
