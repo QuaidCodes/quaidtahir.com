@@ -1,6 +1,5 @@
 
-export default function Porjects() {
+export default function ProjectsPage() {
     return <>
-        
     </>
 }
