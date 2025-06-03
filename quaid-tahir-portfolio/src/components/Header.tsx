@@ -40,14 +40,14 @@ export default function Header() {
   return (
     <header className="pt-3">
       <nav>
-        <div className="text-[40px] text-center">Quaid Tahir قائد طاہر</div>
+        <div className="text-[40px] text-center">Quaid Tahir <span className="text-[#a52a2a]">قائد طاہر</span></div>
         <ul className="flex justify-center">
 
           <div className="flex">
             {navLinks.map(({ href, label }) => {
               return (
                 <li key={href}>
-                  <Link href={href} className="py-4 px-7 hover:underline hover:text-gold">
+                  <Link href={href} className="text=[32px] font-bold py-4 px-7 hover:text-[#ccbd15]">
                     {label}
                   </Link>
                 </li>
