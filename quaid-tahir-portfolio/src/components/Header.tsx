@@ -32,7 +32,7 @@ export default function Header() {
 
   // className={`px-3 py-2 rounded-md font-medium transition-colors ${
   //                     isActive
-  //                       ? 'bg-blue-600 text-white dark:bg-blue-500'
+  //                       ? 'bg-blue-600 text-white dark:bg-blue-50 0'
   //                       : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
   //                   }`}
   //                   aria-current={isActive ? 'page' : undefined}
@@ -40,14 +40,14 @@ export default function Header() {
   return (
     <header className="pt-3">
       <nav>
-        <ul className="flex justify-between">
-          <li className="text-xl">Quaid Tahir</li>
+        <div className="text-[40px] text-center">Quaid Tahir قائد طاہر</div>
+        <ul className="flex justify-center">
 
           <div className="flex">
             {navLinks.map(({ href, label }) => {
               return (
                 <li key={href}>
-                  <Link href={href} className="py-4 px-7 hover:underline ">
+                  <Link href={href} className="py-4 px-7 hover:underline hover:text-gold">
                     {label}
                   </Link>
                 </li>
