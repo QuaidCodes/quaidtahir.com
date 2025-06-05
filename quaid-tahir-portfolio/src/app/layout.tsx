@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
 import "@/styles/globals.css";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <Header />
+        <Hero />
         {children}
       </body>
     </html>

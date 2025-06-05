@@ -2,7 +2,7 @@
 export default function Hero() {
     return <>
     
-        <h1>Hero</h1>
+        <h1 className="h-[3000px] bg-white">Hero</h1>
 
     </>
 }

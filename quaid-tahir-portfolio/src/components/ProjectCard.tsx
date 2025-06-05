@@ -3,7 +3,7 @@ import { Project } from "@/data/projectsList";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="bg-emerald-700 p-5 h-[300px] w-[500px] rounded-2xl">
+    <div className="bg-emerald-700 p-5 h-[300px] w-[500px] rounded-2xl hover:scale-102 ">
       <img
         src={project.image || "/placeholder.jpg"}
         alt={project.title}
