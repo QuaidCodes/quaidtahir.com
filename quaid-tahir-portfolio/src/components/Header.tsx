@@ -6,7 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Header() {
-  const [showNav, setShowNav] = useState(false);
+  const pathname = usePathname();
+  const isLanding = pathname === "/";
+  const [showNav, setShowNav] = useState(!isLanding);
 
   type NavLink = {
     href: string;
@@ -21,25 +23,29 @@ export default function Header() {
     { href: "/contact", label: "Contact" },
   ];
 
-  const pathname = usePathname();
-
   useEffect(() => {
+    if (!isLanding) {
+      setShowNav(true);
+      return;
+    }
+
     const handleScroll = () => {
-      setShowNav(window.scrollY > 100);
+      if (window.scrollY > 100) setShowNav(true);
+      else setShowNav(false);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isLanding]);
 
   return (
     <AnimatePresence>
       {showNav && (
         <motion.header
-          initial={{y:-80, opacity:0}}
-          animate={{y:0, opacity:1}}
-          exit={{y:-80, opacity: 0}}
-          transition={{duration: 0.3, ease: "easeOut"}}
+          initial={{ y: -80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -80, opacity: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="fixed top-0 left-0 w-full bg-black- text-black p-4 text-center shadow-lg"
         >
           <nav>
