@@ -46,12 +46,12 @@ export default function Header() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -80, opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="fixed top-0 left-0 w-full bg-black- text-black p-4 text-center shadow-lg relative"
+          className="top-0 left-0 w-full bg-black- text-black p-4 text-center shadow-lg relative"
         >
           <nav>
             <div className="text-[40px] text-center">
               <Link href="/" className="text-white">
-                Quaid Tahir <span className="text-[#a52a2a]">قائد طاہر</span>
+                Quaid Tahir <span className="text-[#FFEA00]">قائد طاہر</span>
               </Link>
             </div>
             <ul className="flex justify-center">
@@ -65,8 +65,8 @@ export default function Header() {
                         href={href}
                         className={`px-3 py-2 text-[20px] font-bold rounded-md transition-colors text-white ${
                           isActive
-                            ? " text-[#a52a2a] underline"
-                            : " hover:text-[#a52a2a]"
+                            ? " text-[#FFEA00] underline"
+                            : " hover:text-[#FFEA00]"
                         }`}
                         aria-current={isActive ? "page" : undefined}
                       >
