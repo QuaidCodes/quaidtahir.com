@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-    --background: white;
-    --foreground: red;
+    --background: black;
+    --foreground: white;
 }
 
 @theme inline {

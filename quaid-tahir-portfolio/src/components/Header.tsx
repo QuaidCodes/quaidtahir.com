@@ -46,11 +46,11 @@ export default function Header() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -80, opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="fixed top-0 left-0 w-full bg-black- text-black p-4 text-center shadow-lg"
+          className="fixed top-0 left-0 w-full bg-black- text-black p-4 text-center shadow-lg relative"
         >
           <nav>
             <div className="text-[40px] text-center">
-              <Link href="/">
+              <Link href="/" className="text-white">
                 Quaid Tahir <span className="text-[#a52a2a]">قائد طاہر</span>
               </Link>
             </div>
@@ -63,7 +63,7 @@ export default function Header() {
                     <li key={href}>
                       <Link
                         href={href}
-                        className={`px-3 py-2 text-[20px] font-bold rounded-md transition-colors ${
+                        className={`px-3 py-2 text-[20px] font-bold rounded-md transition-colors text-white ${
                           isActive
                             ? " text-[#a52a2a] underline"
                             : " hover:text-[#a52a2a]"

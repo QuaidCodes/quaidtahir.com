@@ -80,7 +80,7 @@ export default function Contact() {
   return (
     <>
       <div className="w-full flex justify-center my-20">
-        <form onSubmit={handleSubmit} className="space-y-4 w-[500px]">
+        <form onSubmit={handleSubmit} className="space-y-4 w-[500px]" autoComplete="off">
           {["firstName", "lastName", "email", "subject", "message"].map(
             (field) => {
               const isTextarea = field === "message";
@@ -100,7 +100,7 @@ export default function Contact() {
                       rows={4}
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="w-full border border-gray-300 rounded p-2"
+                      className="w-full border border-bottom-white outline-none"
                     />
                   ) : (
                     <input
@@ -109,7 +109,7 @@ export default function Contact() {
                       type="text"
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="w-full border border-gray-300 rounded p-2"
+                      className="w-full border border-gray-300 rounded p-2 outline-none"
                     />
                   )}
 

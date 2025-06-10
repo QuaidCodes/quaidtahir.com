@@ -4,8 +4,14 @@
 
 
 High Priority
+- build landing page
+- build homepage
+- create portfolio
+- create contact page
+- create project page
 
 
 
 
 Low Priority
+- computer science courses in the site as a timeline to help with studying and demonstrate skills
