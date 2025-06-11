@@ -86,12 +86,12 @@ export default function Contact() {
               const isTextarea = field === "message";
               return (
                 <div key={field}>
-                  <label
+                  {/* <label
                     className="block text-sm font-medium capitalize"
                     htmlFor={field}
                   >
                     {field.replace(/([A-Z])/g, " $1")}
-                  </label>
+                  </label> */}
 
                   {isTextarea ? (
                     <textarea
@@ -101,6 +101,7 @@ export default function Contact() {
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
                       className="w-full border border-bottom-white outline-none"
+                      placeholder="Message"
                     />
                   ) : (
                     <input
@@ -109,7 +110,8 @@ export default function Contact() {
                       type="text"
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="w-full border border-gray-300 rounded p-2 outline-none"
+                      className="w-full border-b-1 border-b-white p-2 outline-none capitalize"
+                      placeholder={field.replace(/([A-Z])/g, " $1")}
                     />
                   )}
 
