@@ -5,8 +5,14 @@ import { z } from "zod";
 
 export default function Contact() {
   const contactSchema = z.object({
-    firstName: z.string().min(1, "First name is required!").max(20, "The name is too long!"),
-    lastName: z.string().min(1, "Last name is required!").max(20, "The name is too long!"),
+    firstName: z
+      .string()
+      .min(1, "First name is required!")
+      .max(20, "The name is too long!"),
+    lastName: z
+      .string()
+      .min(1, "Last name is required!")
+      .max(20, "The name is too long!"),
     email: z.string().email(),
     subject: z.string().min(1, "Subject is required!"),
     message: z.string().min(1, "Message is required!"),
@@ -29,7 +35,6 @@ export default function Contact() {
     "idle" | "submitting" | "success" | "error"
   >("idle");
 
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -37,13 +42,12 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
 
     const result = contactSchema.safeParse(formData);
-    
+
     if (!result.success) {
       const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
       result.error.errors.forEach((err) => {
@@ -80,7 +84,11 @@ export default function Contact() {
   return (
     <>
       <div className="w-full flex justify-center my-20">
-        <form onSubmit={handleSubmit} className="space-y-4 w-[500px]" autoComplete="off">
+        <form
+          onSubmit={handleSubmit}
+          className="w-[500px] space-y-10 flex flex-col justify-center  "
+          autoComplete="off"
+        >
           {["firstName", "lastName", "email", "subject", "message"].map(
             (field) => {
               const isTextarea = field === "message";
@@ -100,7 +108,7 @@ export default function Contact() {
                       rows={4}
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="w-full border border-bottom-white outline-none"
+                      className="contact-input border"
                       placeholder="Message"
                     />
                   ) : (
@@ -110,7 +118,7 @@ export default function Contact() {
                       type="text"
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="w-full border-b-1 border-b-white p-2 outline-none capitalize"
+                      className="contact-input"
                       placeholder={field.replace(/([A-Z])/g, " $1")}
                     />
                   )}
@@ -127,7 +135,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400"
           >
             {status === "submitting" ? "Sending..." : "Send Message"}
           </button>

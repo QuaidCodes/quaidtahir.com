@@ -63,7 +63,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <Header />
-        <Hero />
+        {/* <Hero /> */}
         <Footer />
         {children}
       </body>

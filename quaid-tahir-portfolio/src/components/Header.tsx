@@ -23,29 +23,9 @@ export default function Header() {
     { href: "/contact", label: "Contact" },
   ];
 
-  useEffect(() => {
-    if (!isLanding) {
-      setShowNav(true);
-      return;
-    }
-
-    const handleScroll = () => {
-      if (window.scrollY > 100) setShowNav(true);
-      else setShowNav(false);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLanding]);
-
   return (
     <AnimatePresence>
-      {showNav && (
         <motion.header
-          initial={{ y: -80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -80, opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
           className="top-0 left-0 w-full p-4 text-center shadow-lg relative"
         >
           <nav>
@@ -79,7 +59,6 @@ export default function Header() {
             </ul>
           </nav>
         </motion.header>
-      )}
     </AnimatePresence>
   );
 }
