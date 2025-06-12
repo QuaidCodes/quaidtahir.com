@@ -108,7 +108,7 @@ export default function Contact() {
                       rows={4}
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="contact-input border"
+                      className="contact-input border placeholder:pl-1 pl-2"
                       placeholder="Message"
                     />
                   ) : (
