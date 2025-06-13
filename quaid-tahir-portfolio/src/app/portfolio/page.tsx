@@ -1,18 +1,12 @@
+'use client';
+
+import PdfViewer from "@/components/PdfViewer";
+
 export default function Portfolio() {
   return (
-    <div className="min-h-screen">
-      <iframe
-        src="/QuaidTahirResume.pdf"
-        className="w-full h-[90vh] border shadow-lg rounded-xl bg-red"
-      />
-      <div className="flex">
-        <button className="bg-blue-400">
-          <a href="/QuaidTahirResume.pdf">Download PDF</a>
-        </button>
-        <button className="bg-blue-400">
-          <a href="/QuaidTahirResume.docx">Download docx</a>
-        </button>
-      </div>
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">My Portfolio PDF</h1>
+      <PdfViewer fileUrl="/QuaidTahirResume.pdf" />
     </div>
   );
 }
