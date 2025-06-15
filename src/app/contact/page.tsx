@@ -77,6 +77,7 @@ export default function Contact() {
       });
       setErrors({});
     } catch (err) {
+      console.log(err);
       setStatus("error");
     }
   };
