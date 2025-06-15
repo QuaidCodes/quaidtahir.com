@@ -1,4 +1,3 @@
-
 export default function Home() {
   // Portfolio Samples.
   // https://portfolio.adobe.com/examples/
@@ -26,10 +25,10 @@ export default function Home() {
 
   // The Sunburst chart is another option
 
-  // Time line chart - definetely add. 
+  // Time line chart - definetely add.
   // could be a vertifcal line on projects page.
 
- // -------------------------------
+  // -------------------------------
 
   // Theme should be dark and gold
   // Name should be rotate between urdu and english
@@ -37,6 +36,17 @@ export default function Home() {
 
   return (
     <>
+      <main className="min-h-screen px-4 py-20 bg-black text-gold">
+        {/* Hero Section */}
+        <section className="mb-32">
+          <h1 className="text-6xl font-extrabold">Quaid Tahir</h1>
+          <p className="text-xl mt-4">
+            Software Engineer | Frontend + Fullstack
+          </p>
+        </section>
+
+        {/* Charts, Timeline, etc. here */}
+      </main>
     </>
   );
 }
