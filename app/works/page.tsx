@@ -1,5 +1,5 @@
-import { projects } from "@/data/projectsList";
-import ProjectCard from "@/components/ProjectCard";
+import { projects } from "data/projectsList";
+import ProjectCard from "components/ProjectCard";
 
 export default function ProjectsPage() {
   return (
