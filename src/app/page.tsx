@@ -36,11 +36,11 @@ export default function Home() {
 
   return (
     <>
-      <main className="min-h-screen px-4 py-20 bg-black text-gold">
+      <main className="min-h-screen px-4 py-20 bg-black text-white">
         {/* Hero Section */}
         <section className="mb-32">
-          <h1 className="text-6xl font-extrabold">Quaid Tahir</h1>
-          <p className="text-xl mt-4">
+          <h1 className="text-6xl font-extrabold text-white">Quaid Tahir</h1>
+          <p className="text-xl mt-4 text-white">
             Software Engineer | Frontend + Fullstack
           </p>
         </section>

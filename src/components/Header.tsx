@@ -24,33 +24,31 @@ export default function Header() {
     <AnimatePresence>
       <motion.header className="top-0 left-0 w-full p-4 text-center shadow-lg relative">
         <nav>
-          <div className="text-[40px] text-center">
+          <div className="text-[40px] text-center mb-4">
             <Link href="/" className="uppercase">
               Quaid Tahir <span className="text-[#990000]">قائد طاہر</span>
             </Link>
           </div>
-          <ul className="flex justify-center">
-            <div className="flex">
-              {navLinks.map(({ href, label }) => {
-                const isActive = pathname === href;
+          <ul className="flex justify-center gap-4">
+            {navLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
 
-                return (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className={`px-4 text-[12px] font-bold rounded-md transition-colors uppercase ${
-                        isActive
-                          ? " text-[#FFEA00] before:content-['▪'] before:mr-1"
-                          : " hover:text-[#FFEA00]"
-                      }`}
-                      aria-current={isActive ? "page" : undefined}
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </div>
+              return (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={`px-4 text-[12px] font-bold rounded-md transition-colors uppercase ${
+                      isActive
+                        ? "text-[#FFEA00] before:content-['▪'] before:mr-1"
+                        : "hover:text-[#FFEA00]"
+                    }`}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </motion.header>
