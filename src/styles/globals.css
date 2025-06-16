@@ -25,4 +25,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contact-input {
+  @apply capitalize w-full border-b border-white outline-none px-1; 
+}
 
+.contact-input:focus{
+  @apply border-b-2 border-[#FFEA00];
+}

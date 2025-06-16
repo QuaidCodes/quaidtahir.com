@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import {motion} from 'framer-motion';
 import { z } from "zod";
 
 export default function Contact() {
@@ -84,10 +85,10 @@ export default function Contact() {
 
   return (
     <>
-      <div className="w-full flex justify-center my-20">
+      <div className="w-full flex justify-center my-10">
         <form
           onSubmit={handleSubmit}
-          className="w-[500px] space-y-10 flex flex-col justify-center  "
+          className="w-[500px] space-y-5 flex flex-col justify-center  "
           autoComplete="off"
         >
           {["firstName", "lastName", "email", "subject", "message"].map(
@@ -95,13 +96,6 @@ export default function Contact() {
               const isTextarea = field === "message";
               return (
                 <div key={field}>
-                  {/* <label
-                    className="block text-sm font-medium capitalize"
-                    htmlFor={field}
-                  >
-                    {field.replace(/([A-Z])/g, " $1")}
-                  </label> */}
-
                   {isTextarea ? (
                     <textarea
                       id={field}
@@ -109,7 +103,7 @@ export default function Contact() {
                       rows={4}
                       value={formData[field as keyof ContactFormData]}
                       onChange={handleChange}
-                      className="contact-input border placeholder:pl-1 pl-2"
+                      className="contact-input border-2 rounded placeholder:pl-1 pl-2"
                       placeholder="Message"
                     />
                   ) : (
@@ -125,7 +119,7 @@ export default function Contact() {
                   )}
 
                   {errors[field as keyof ContactFormData] && (
-                    <p className="text-red-500 text-sm mt-1">
+                    <p className="text-red-500 text-sm">
                       {errors[field as keyof ContactFormData]}
                     </p>
                   )}
