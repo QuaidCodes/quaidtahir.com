@@ -12,13 +12,13 @@ export const projects: Project[] = [
     title: "Social Media Manager",
     description: "This platform manages socials",
     link: "link for app",
-    image: "image url",
+    image: "/images/placeholder.jpg",
   },
   {
     id: 2,
     title: "Social Media Manager",
     description: "This platform manages socials",
     link: "link for app",
-    image: "image url",
+    image: "/images/placeholder.jpg",
   },
 ];

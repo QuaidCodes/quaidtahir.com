@@ -29,7 +29,7 @@ export default function Header() {
               Quaid Tahir <span className="text-[#990000]">قائد طاہر</span>
             </Link>
           </div>
-          <ul className="flex justify-center gap-4">
+          <ul className="flex justify-center">
             {navLinks.map(({ href, label }) => {
               const isActive = pathname === href;
 

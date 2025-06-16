@@ -34,15 +34,13 @@ export default function Home() {
   // Name should be rotate between urdu and english
   // Have a skills chart
 
-  return (
+return (
     <>
-      <main className="min-h-screen px-4 py-20 bg-black text-white">
+      <main className="h-lvw flex justify-center items-center m-auto">
         {/* Hero Section */}
-        <section className="mb-32">
-          <h1 className="text-6xl font-extrabold text-white">Quaid Tahir</h1>
-          <p className="text-xl mt-4 text-white">
-            Software Engineer | Frontend + Fullstack
-          </p>
+        <section>
+          <h1 className="text-6xl font-extrabold ">Quaid Tahir</h1>
+          <p className="text-xl mt-4 text-center">Software Engineer</p>
         </section>
 
         {/* Charts, Timeline, etc. here */}
