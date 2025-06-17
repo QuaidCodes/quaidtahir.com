@@ -62,6 +62,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <Header />
+        <div className="pt-[110px] border border-white"></div>
         {children}
         <Footer />
       </body>

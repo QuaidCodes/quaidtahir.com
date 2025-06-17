@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <AnimatePresence>
-      <motion.header className="top-0 left-0 w-full p-4 text-center shadow-lg relative">
+      <motion.header className="top-0 left-0 w-full h-[56px] p-4 text-center shadow-lg fixed">
         <nav>
           <div className="text-[40px] text-center mb-4">
             <Link href="/" className="uppercase">
