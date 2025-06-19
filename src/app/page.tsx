@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -24,10 +25,8 @@ export default function Home() {
   // https://www.hyperui.dev/components/marketing/faqs frequently asked questions.
 
   return (
-    <main className="relative flex justify-center items-center flex-col over-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <Hero />
-      </div>
+    <main>
+      <Hero />
     </main>
   );
 }
