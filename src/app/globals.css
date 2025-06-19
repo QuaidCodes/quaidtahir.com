@@ -11,3 +11,9 @@ body,
 @theme {
   --color-black-100: #000319;
 }
+
+@layer components {
+  .hero-btns {
+    @apply transition-all duration-300 ease-in-out border-2 text-lg border-[#49beb7] px-5 py-2 mr-5 rounded  hover:bg-[#49beb7] hover:text-[#3b4a6b] hover:font-bold w-7xl;
+  }
+}
