@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -23,6 +22,7 @@ export default function Home() {
   // https://www.hyperui.dev/components/application/steps this is for progress for completing forms.
   // https://www.hyperui.dev/components/marketing/carts for checkout carts.
   // https://www.hyperui.dev/components/marketing/faqs frequently asked questions.
+  // https://daisyui.com/components/countdown/ coundown page
 
   return (
     <main>
