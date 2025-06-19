@@ -23,7 +23,9 @@ export default function Home() {
   // https://www.hyperui.dev/components/marketing/carts for checkout carts.
   // https://www.hyperui.dev/components/marketing/faqs frequently asked questions.
   // https://daisyui.com/components/countdown/ coundown page
-
+  // https://www.heroui.com/docs/components/tabs sign up and sign in?
+  // https://daisyui.com/components/mockup-phone/ iphone mockup
+  
   return (
     <main>
       <Hero />

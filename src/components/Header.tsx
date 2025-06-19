@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="mt-5 fixed w-full z-10">
       <nav className=" flex justify-center items-center">
-        <div className="flex justify-center rounded-full bg-[#181818] w-fit">
+        <div className="flex justify-center rounded-full bg-[#181818]">
           {navItems.map(({ href, label }) => {
             const isActive = pathname === href;
 
@@ -26,7 +26,7 @@ export default function Header() {
               <Link
                 key={href}
                 href={href}
-                className={`px-4 py-3 text-[12px] font-bold rounded-md text-white transition-colors uppercase  ${
+                className={`px-4 py-3 text-[12px] font-bold rounded-md text-white  uppercase  ${
                   isActive
                     ? " text-white before:content-['▪'] before:mr-1"
                     : " hover:text-green-500 hover:underline"
