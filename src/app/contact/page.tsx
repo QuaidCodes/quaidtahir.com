@@ -84,7 +84,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="w-full h-screen flex justify-center my-10">
+      <div className="w-full h-screen flex justify-center">
         <form
           onSubmit={handleSubmit}
           className="w-[500px] space-y-5 flex flex-col justify-center  "
