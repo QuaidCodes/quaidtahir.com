@@ -1,9 +1,19 @@
+
 export default function Portfolio() {
   return (
-    <section>
-      <h1 className="flex justify-ceneter items-center h-screen w-full  bg-red-500">
-        <p className="text-center w-full text-7xl">Portfolio</p>
-      </h1>
-    </section>
+    <div className="min-h-screen">
+      <iframe
+        // src="/QuaidTahirPortfolio.pdf"
+        className="w-full h-[90vh] border shadow-lg rounded-xl bg-red"
+      />
+      <div className="flex">
+        <button className="bg-blue-400">
+          <a href="/QuaidTahirResume.pdf">Download PDF</a>
+        </button>
+        <button className="bg-blue-400">
+          <a href="/QuaidTahirResume.docx">Download docx</a>
+        </button>
+      </div>
+    </div>
   );
 }
