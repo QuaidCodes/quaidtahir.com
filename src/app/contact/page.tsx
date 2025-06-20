@@ -129,7 +129,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400"
+            className="hero-btns"
           >
             {status === "submitting" ? "Sending..." : "Send Message"}
           </button>

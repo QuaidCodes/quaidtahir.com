@@ -13,7 +13,7 @@ export default function Hero() {
         <span className="text-[#990000] text-8xl mb-10">قائد طاہر </span>
       </div>
       <p className="text-lg mb-10">Software Engineer</p>
-
+      
       <div>
         <Link className="hero-btns" href="/portfolio">
           Portfolio

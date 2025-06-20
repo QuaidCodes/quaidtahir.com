@@ -23,5 +23,5 @@ body,
 }
 
 .contact-input:focus{
-  @apply border-b-2 border-[#FFEA00];
+  @apply border-b-2 border-[#49beb7];
 }
