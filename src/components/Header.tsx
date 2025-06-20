@@ -11,8 +11,8 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/works", label: "Works" },
-    { href: "/papers", label: "Papers" },
-    { href: "/about", label: "About" },
+    // { href: "/papers", label: "Papers" },
+    // { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -32,6 +32,7 @@ export default function Header() {
                   />
                 )}
                 <Link
+                  key={href}
                   href={href}
                   className={`relative z-10 text-[12px] font-bold uppercase transition-colors ${
                     isActive ? "text-white" : "text-white/70 hover:text-white"
@@ -43,7 +44,6 @@ export default function Header() {
             );
           })}
         </div>
-        
       </nav>
     </header>
   );

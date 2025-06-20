@@ -161,6 +161,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
+
       <div className="flex justify-end mt-5">
         <button className="hero-btns">
           <a href="/QuaidTahirResume.pdf">Download PDF</a>
@@ -169,6 +170,7 @@ export default function Portfolio() {
           <a href="/QuaidTahirResume.docx">Download docx</a>
         </button>
       </div>
+
     </main>
   );
 }
