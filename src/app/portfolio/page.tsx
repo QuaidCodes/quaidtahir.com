@@ -1,8 +1,10 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 font-sans text-white bg-[#0f172a]">
+    <div className="w-full mx-auto px-4 py-12 font-sans text-white bg-[#0f172a]">
       {/* Header */}
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">QUAID TAHIR</h1>
@@ -10,20 +12,22 @@ export default function Portfolio() {
           SOFTWARE ENGINEER
         </h2>
         <p className="mt-4 text-sm text-gray-400">
-          <a href="mailto:quaidtahirw@gmail.com">quaidtahirw@gmail.com</a> · New
-          Jersey ·
+          <a href="mailto:quaidtahirw@gmail.com" className="hover:text-white">
+            quaidtahirw@gmail.com |
+          </a>
+          <span> New Jersey |</span>
           <Link
             href="https://www.quaidtahir.com"
             target="_blank"
-            className="underline mx-1"
+            className="underline mx-1 hover:text-white"
           >
             quaidtahir.com
-          </Link>{" "}
-          ·
+          </Link>
+          |
           <Link
             href="https://www.github.com/QuaidCodes"
             target="_blank"
-            className="underline mx-1"
+            className="underline mx-1 hover:text-white"
           >
             github.com/QuaidCodes
           </Link>
@@ -161,7 +165,6 @@ export default function Portfolio() {
         </ul>
       </section>
 
-
       <div className="flex justify-end mt-5">
         <button className="hero-btns">
           <a href="/QuaidTahirResume.pdf">Download PDF</a>
@@ -170,7 +173,6 @@ export default function Portfolio() {
           <a href="/QuaidTahirResume.docx">Download docx</a>
         </button>
       </div>
-
-    </main>
+    </div>
   );
 }
