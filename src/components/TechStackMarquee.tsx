@@ -1,58 +1,45 @@
 "use client";
 
-import { useRef } from "react";
-import { useAnimationFrame } from "framer-motion";
+import { motion } from "framer-motion";
+
+const techStack = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Framer Motion",
+  "Vercel",
+  "Figma",
+  "C++",
+  "Python",
+  "HTML/CSS",
+  "Node.js",
+  "Java",
+];
 
 export default function TechStackMarquee() {
-  const baseVelocity = -100; // pixels per second
-  const x = useRef(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const techStack = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Framer Motion",
-    "Vercel",
-    "Figma",
-    "C++",
-    "Python",
-    "HTML/CSS",
-    "Node.js",
-    "Java",
-  ];
-
-  useAnimationFrame((_, delta) => {
-    const moveBy = (baseVelocity * delta) / 1000;
-    x.current += moveBy;
-
-    if (containerRef.current) {
-      containerRef.current.style.transform = `translateX(${x.current}px)`;
-    }
-
-    if (
-      containerRef.current &&
-      x.current <= -containerRef.current.scrollWidth / 2
-    ) {
-      x.current = 0;
-    }
-  });
-
-  const duplicatedStack = [...techStack, ...techStack];
+  const repeated = [...techStack, ...techStack]; // repeat twice for seamless scroll
 
   return (
-    <div className="relative overflow-hidden whitespace-nowrap border-y border-neutral-800 bg-neutral-950 py-4 text-white">
-      <div className="flex gap-20 px-4" ref={containerRef}>
-        {duplicatedStack.map((tech, index) => (
+    <div className="relative overflow-hidden border-y border-neutral-800 bg-neutral-950 py-4">
+      <motion.div
+        className="flex gap-20 px-4 whitespace-nowrap will-change-transform"
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{
+          ease: "linear",
+          duration: 20,
+          repeat: Infinity,
+        }}
+      >
+        {repeated.map((tech, i) => (
           <span
-            key={index}
+            key={i}
             className="text-lg font-medium tracking-wider uppercase text-neutral-300"
           >
             {tech}
           </span>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

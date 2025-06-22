@@ -11,13 +11,13 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/works", label: "Works" },
-    { href: "/papers", label: "Papers" },
-    { href: "/about", label: "About" },
+    // { href: "/papers", label: "Papers" },
+    // { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <header className="my-5 sticky w-full z-10">
+    <header className="my-5 fixed w-full z-10">
       <nav className=" flex justify-center items-center">
         <div className="flex">
           {navItems.map(({ href, label }) => {
@@ -31,7 +31,7 @@ export default function Header() {
                 {isActive && (
                   <motion.div
                     layoutId="active-pill"
-                    className="absolute inset-0 rounded-full bg-[#f70776] z-0"
+                    className="absolute inset-0 rounded-full bg-[#7a0132] z-0"
                     transition={{ type: "spring", stiffness: 200, damping: 50 }}
                   />
                 )}

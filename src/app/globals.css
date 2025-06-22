@@ -10,6 +10,8 @@ body,
 
 @theme {
   --color-black-100: #000319;
+  --color-portfolio-headings: #203e5f;
+  --color-portfolio-content: white;
 }
 
 @layer components {
@@ -24,4 +26,12 @@ body,
 
 .contact-input:focus {
   @apply border-b-2 border-[#00aaa0];
+}
+
+.portfolio-headings {
+  @apply p-1 pl-2 text-2xl font-semibold bg-portfolio-headings mb-2 text-white;
+}
+
+.portfolio-content {
+  @apply text-portfolio-content text-lg;
 }
