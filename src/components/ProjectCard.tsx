@@ -1,4 +1,3 @@
-// src/components/ProjectCard.tsx
 "use client";
 
 import { Project } from "@/data/projectList";
@@ -14,7 +13,7 @@ interface Props {
 export default function ProjectCard({ project, index }: Props) {
   return (
     <motion.div
-      className="rounded-2xl shadow-lg overflow-hidden bg-white dark:bg-zinc-900"
+      className="rounded-2xl shadow-lg overflow-hidden bg-white dark:bg-zinc-900 cursor-pointer"
       initial={{ y: 300, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{

@@ -7,10 +7,13 @@ export default function Portfolio() {
     <div className="w-full mx-auto px-4 py-12 font-sans text-white bg-[#0f172a]">
       {/* Header */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight">QUAID TAHIR</h1>
+        <h1 className={`text-6xl font-bold tracking-tight text-nowrap`}>
+          QUAID TAHIR
+        </h1>
         <h2 className="text-xl text-[#f70776] mt-2 font-semibold">
           SOFTWARE ENGINEER
         </h2>
+
         <p className="mt-4 text-sm text-gray-400">
           <a href="mailto:quaidtahirw@gmail.com" className="hover:text-white">
             quaidtahirw@gmail.com |
@@ -158,10 +161,13 @@ export default function Portfolio() {
           Achievements
         </h3>
         <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
-          <li>
-            Foundation: Data, Data, Everywhere – Amazon, Coursera – 12/01/2021
+          <li className="font-bold">
+            Foundation: Data, Data, Everywhere - Amazon, Coursera - 12/01/2021
           </li>
-          <li>Amazon Web Services – Amazon, Coursera – 12/01/2020</li>
+
+          <li className="font-bold">
+            Amazon Web Services - Amazon, Coursera - 12/01/2020
+          </li>
         </ul>
       </section>
 
@@ -169,6 +175,7 @@ export default function Portfolio() {
         <button className="hero-btns">
           <a href="/QuaidTahirResume.pdf">Download PDF</a>
         </button>
+
         <button className="hero-btns">
           <a href="/QuaidTahirResume.docx">Download docx</a>
         </button>

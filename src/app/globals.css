@@ -14,7 +14,7 @@ body,
 
 @layer components {
   .hero-btns {
-    @apply transition-all duration-300 ease-in-out border-2 text-lg border-[#49beb7] px-8 py-1 mr-5 rounded font-semibold hover:bg-[#49beb7] hover:text-white;
+    @apply transition-all duration-300 ease-in-out border-2 text-lg border-[#00aaa0] px-8 py-1 mr-5 rounded font-semibold hover:bg-[#00aaa0] hover:text-white;
   }
 }
 
@@ -23,5 +23,5 @@ body,
 }
 
 .contact-input:focus {
-  @apply border-b-2 border-[#49beb7];
+  @apply border-b-2 border-[#00aaa0];
 }

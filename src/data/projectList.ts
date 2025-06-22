@@ -16,8 +16,8 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Social Media Manager",
-    description: "This platform manages socials",
+    title: "Porject Management App",
+    description: "This platform manages and handles project management, tasks handling, ticket request, and more.",
     link: "link for app",
     image: "/images/placeholder.jpg",
   },
