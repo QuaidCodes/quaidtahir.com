@@ -11,7 +11,7 @@ export default function Hero() {
     <BackgroundBeamsWithCollision>
       <div className="flex flex-col w-full m-30">
         <div className="flex items-start flex-col text-nowrap">
-          <h1>Hello World, This is</h1>
+          <h1 className="text-2xl">Hello World, This is</h1>
           <motion.h1
             className="text-8xl"
             initial={{ scale: 0 }}
@@ -31,7 +31,7 @@ export default function Hero() {
           </motion.span>
         </div>
 
-        <p className="text-lg mb-10">Software Engineer</p>
+        <p className="text-lg mb-10 italic">Software Engineer</p>
 
         <div className="flex">
           <motion.div

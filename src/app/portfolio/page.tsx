@@ -11,8 +11,7 @@ export default function Portfolio() {
           <h1 className={`text-6xl font-bold tracking-tight text-nowrap`}>
             QUAID TAHIR
           </h1>
-          <h2 className="text-xl mt-2 font-semibold">SOFTWARE ENGINEER</h2>
-
+          <h2 className="text-xl mt-2 font-semibold">SOFTWARE ENGINEER</h2> 
           <p className="mt-4 text-sm text-gray-400">
             <a href="mailto:quaidtahirw@gmail.com" className="hover:text-white">
               quaidtahirw@gmail.com |
@@ -40,12 +39,12 @@ export default function Portfolio() {
         <section className="mb-10">
           <h3 className="portfolio-headings">Professional Summary</h3>
           <p className="portfolio-content">
-            Ambitious Software Engineer candidate actively pursuing a Bachelor’s
+            Ambitious Software Engineer candidate actively pursuing a Bachelor's
             degree in Computer Science. Proficient in Python, TypeScript, React,
             Next.js, Tailwind CSS, Node.js, Java, and C++, with practical
             experience designing and developing scalable, high-performance web
             applications. Adept at writing clean, maintainable code and
-            utilizing modern software development practices including version
+            utilizing modern software development practices including versionc
             control and CI/CD workflows. Strong problem-solving abilities and a
             collaborative approach, committed to continuous learning and
             delivering robust software solutions.
@@ -79,7 +78,8 @@ export default function Portfolio() {
                 Applied Tailwind CSS for responsive, mobile-first design,
                 ensuring consistent performance and visual quality across
                 devices.
-              </li>
+          
+           ZZZZZZZ    </li>
               <li>
                 Built modular, scalable components with efficient state
                 management to maximize code reuse and maintainability. Employed
@@ -138,11 +138,11 @@ export default function Portfolio() {
           <h3 className="portfolio-headings">Education</h3>
           <ul className="list-disc list-inside portfolio-content space-y-1">
             <li>
-              Master’s Degree in Computer Science – Western Governors
+              Master's Degree in Computer Science - Western Governors
               University, Salt Lake City, Utah
             </li>
             <li>
-              Bachelor’s Degree in Computer Science – Western Governors
+              Bachelor's Degree in Computer Science - Western Governors
               University, Salt Lake City, Utah
             </li>
           </ul>

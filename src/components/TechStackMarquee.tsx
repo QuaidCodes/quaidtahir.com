@@ -18,16 +18,16 @@ const techStack = [
 ];
 
 export default function TechStackMarquee() {
-  const repeated = [...techStack, ...techStack]; // repeat twice for seamless scroll
+  const repeated = [...techStack, ...techStack]; // repeat for smooth looping
 
   return (
     <div className="relative overflow-hidden border-y border-neutral-800 bg-neutral-950 py-4">
       <motion.div
         className="flex gap-20 px-4 whitespace-nowrap will-change-transform"
-        animate={{ x: ["0%", "-100%"] }}
+        animate={{ x: ["0%", "-50%"] }}
         transition={{
           ease: "linear",
-          duration: 20,
+          duration: 30,
           repeat: Infinity,
         }}
       >
