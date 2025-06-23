@@ -1,68 +1,75 @@
 "use client";
 
 import Link from "next/link";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { reemKufiInk } from "@/fonts/fonts";
-
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export default function Hero() {
   return (
     <BackgroundBeamsWithCollision>
-      <div className="flex flex-col w-full m-30">
-        <div className="flex items-start flex-col text-nowrap">
-          <h1 className="text-2xl">Hello World, This is</h1>
-          <motion.h1
-            className="text-8xl"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+      <section className="w-full h-screen flex items-center justify-center px-6 md:px-12 text-white">
+        <div className="w-1/2 text-left">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-lg md:text-xl text-neutral-300 mb-2"
           >
-            QUAID TAHIR
+            Hello World, I’m
+          </motion.h2>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight"
+          >
+            Quaid Tahir
           </motion.h1>
 
           <motion.span
-            className={`${reemKufiInk.className} text-[#990000] text-8xl mb-10 inline`}
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            className={`${reemKufiInk.className} text-[#990000] text-4xl md:text-6xl block mt-2`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
           >
             قائد طاہر
           </motion.span>
-        </div>
 
-        <p className="text-lg mb-10 italic">Software Engineer</p>
-
-        <div className="flex">
-          <motion.div
-            whileHover={{ scale: 1.04 }}
-            transition={{
-              type: "tween",
-              stiffness: 100,
-              duration: 0.2,
-              ease: easeIn,
-            }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+            className="mt-6 text-base md:text-lg text-neutral-400 max-w-xl"
           >
-            <Link href="/portfolio" className="hero-btns">
-              Portfolio
+            I’m a software engineer building performant, scalable, and elegant
+            web applications using Next.js, TypeScript, Tailwind CSS, and
+            Node.js. Focused on solving real-world problems with clean code and
+            modern design.
+          </motion.p>
+
+          <motion.div
+            className="mt-8 flex gap-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 0.5 }}
+          >
+            <Link
+              href="/portfolio"
+              className="px-6 py-2 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all"
+            >
+              View Portfolio
             </Link>
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.04 }}
-            transition={{
-              type: "tween",
-              stiffness: 100,
-              duration: 0.2,
-              ease: easeIn,
-            }}
-          >
-            <Link href="/works" className="hero-btns">
+            <Link
+              href="/works"
+              className="px-6 py-2 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all"
+            >
               View Works
             </Link>
           </motion.div>
         </div>
-      </div>
+      </section>
     </BackgroundBeamsWithCollision>
   );
 }

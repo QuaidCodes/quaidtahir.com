@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -50,6 +49,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           meaningful applications. Feel free to explore these works to see how I
           combine creativity and technical expertise to build impactful
           solutions.
+        </p>
+
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base w-full mt-7">
+          Every project here is more than just lines of code — it's a part of my
+          journey. These are the ideas I've explored, the problems I've solved,
+          and the skills I've picked up along the way. Some are small
+          experiments, others are fully polished apps, but each one reflects how
+          I think, how I learn, and how I bring things to life through code.
         </p>
       </div>
 
