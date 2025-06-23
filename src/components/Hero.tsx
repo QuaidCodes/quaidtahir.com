@@ -43,10 +43,8 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="mt-6 text-base md:text-lg text-neutral-400 max-w-xl"
           >
-            I’m a software engineer building performant, scalable, and elegant
-            web applications using Next.js, TypeScript, Tailwind CSS, and
-            Node.js. Focused on solving real-world problems with clean code and
-            modern design.
+            To solve problems that matter. To build things that last. To shape a
+            future worth scaling.
           </motion.p>
 
           <motion.div
