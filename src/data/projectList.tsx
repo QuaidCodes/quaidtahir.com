@@ -8,7 +8,7 @@ export const projects: TimelineEntry[] = [
         <h3 className="text-2xl font-semibold">Quaid Tahir Portfolio</h3>
         <p className="text-sm text-neutral-500">
           This portfolio is a fully modern, production-grade web application
-          built with Next.js, React, and TypeScript. It's styled using Tailwind
+          built with Next.js, React, and TypeScript. It&rsquo;s styled using Tailwind
           CSS for utility-first design, and enhanced with smooth, responsive
           animations powered by Framer Motion. Behind the scenes, the project is
           deployed on Vercel with a continuous integration and continuous
@@ -68,7 +68,7 @@ export const projects: TimelineEntry[] = [
     title: "Big Launch",
     content: (
       <div>
-          <p>Lauch for Site builder</p>
+        <p>Lauch for Site builder</p>
 
         <a href="/portfolio" className="text-blue-500 hover:underline">
           See updates →

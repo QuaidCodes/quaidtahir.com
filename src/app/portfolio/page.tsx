@@ -1,177 +1,258 @@
 "use client";
 
 import Link from "next/link";
+import { motion, Variants } from "framer-motion";
+
+const fadeIn: Variants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: (custom: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: custom * 0.1, duration: 0.3, ease: "easeOut" },
+  }),
+};
 
 export default function Portfolio() {
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-5xl px-6 py-12 m-5 rounded">
-        {/* Header */}
-        <section className="text-center mb-12">
-          <h1 className={`text-6xl font-bold tracking-tight text-nowrap`}>
-            QUAID TAHIR
-          </h1>
-          <h2 className="text-xl mt-2 font-semibold">SOFTWARE ENGINEER</h2> 
-          <p className="mt-4 text-sm text-gray-400">
-            <a href="mailto:quaidtahirw@gmail.com" className="hover:text-white">
-              quaidtahirw@gmail.com |
-            </a>
-            <span> New Jersey |</span>
-            <Link
-              href="https://www.quaidtahir.com"
-              target="_blank"
-              className="underline mx-1 hover:text-white"
-            >
-              quaidtahir.com
-            </Link>
-            |
-            <Link
-              href="https://www.github.com/QuaidCodes"
-              target="_blank"
-              className="underline mx-1 hover:text-white"
-            >
-              github.com/QuaidCodes
-            </Link>
-          </p>
-        </section>
+    <main className="min-h-screen bg-black text-white px-6 py-16 max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
+      {/* Header */}
+      <motion.header
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={0}
+        variants={fadeIn}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight uppercase select-none">
+          Quaid Tahir
+        </h1>
+        <p className="mt-2 text-lg sm:text-xl font-light text-gray-400">
+          Software Engineer
+        </p>
+        <p className="mt-3 max-w-xl mx-auto text-gray-300 leading-relaxed">
+          I build scalable, elegant software solutions that solve problems that
+          matter.
+        </p>
+        <div className="mt-6 flex justify-center space-x-6 text-gray-500 text-sm sm:text-base">
+          <a
+            href="mailto:quaidtahirw@gmail.com"
+            className="hover:text-white transition"
+            aria-label="Send email"
+          >
+            quaidtahirw@gmail.com
+          </a>
+          <span>|</span>
+          <Link
+            href="https://quaidtahir.com"
+            target="_blank"
+            className="hover:text-white transition underline"
+            aria-label="Visit personal website"
+          >
+            quaidtahir.com
+          </Link>
+          <span>|</span>
+          <Link
+            href="https://github.com/QuaidCodes"
+            target="_blank"
+            className="hover:text-white transition underline"
+            aria-label="Visit GitHub profile"
+          >
+            github.com/QuaidCodes
+          </Link>
+        </div>
+      </motion.header>
 
+      <section className="space-y-14 leading-relaxed">
         {/* Professional Summary */}
-        <section className="mb-10">
-          <h3 className="portfolio-headings">Professional Summary</h3>
-          <p className="portfolio-content">
-            Ambitious Software Engineer candidate actively pursuing a Bachelor's
-            degree in Computer Science. Proficient in Python, TypeScript, React,
-            Next.js, Tailwind CSS, Node.js, Java, and C++, with practical
-            experience designing and developing scalable, high-performance web
-            applications. Adept at writing clean, maintainable code and
-            utilizing modern software development practices including versionc
-            control and CI/CD workflows. Strong problem-solving abilities and a
-            collaborative approach, committed to continuous learning and
-            delivering robust software solutions.
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={1}
+          variants={fadeIn}
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
+            Professional Summary
+          </h2>
+          <p className="text-gray-400 max-w-3xl">
+            Ambitious software engineer candidate pursuing a Bachelor&#39;s
+            degree in Computer Science. Proficient in multiple languages with
+            hands-on experience designing scalable, high-performance
+            applications. Passionate about writing clean, maintainable code and
+            continuously learning modern best practices to solve real-world
+            problems.
           </p>
-        </section>
+        </motion.div>
 
-        {/* Skills */}
-        <section className="mb-10">
-          <h3 className="portfolio-headings">Technical Skills</h3>
-          <p className="portfolio-content">
-            Python | React | Node.js | Next.js | Tailwind CSS | TypeScript |
-            Java | C++
+        {/* Technical Skills */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={2}
+          variants={fadeIn}
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
+            Technical Skills
+          </h2>
+          <p className="text-gray-500 font-mono tracking-wide select-text">
+            Python &nbsp;|&nbsp; React &nbsp;|&nbsp; Node.js &nbsp;|&nbsp;
+            Next.js &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; TypeScript &nbsp;|&nbsp;
+            Java &nbsp;|&nbsp; C++
           </p>
-        </section>
+        </motion.div>
 
         {/* Projects */}
-        <section className="mb-10">
-          <h3 className="portfolio-headings">Projects</h3>
-          <div className="mb-6">
-            <h4 className="text-lg font-bold text-white">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={3}
+          variants={fadeIn}
+          className=""
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+            Projects
+          </h2>
+
+          <article className="mb-8">
+            <h3 className="text-xl font-bold mb-1 text-white">
               Portfolio Website Project
-            </h4>
-            <p className="portfolio-content mb-1">04/2024</p>
-            <ul className="list-disc list-inside portfolio-content space-y-1">
+            </h3>
+            <time className="text-sm text-gray-600 mb-3 block">04/2024</time>
+            <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
               <li>
                 Developed a dynamic portfolio website using Next.js, React, and
-                TypeScript, featuring an interactive and user-friendly interface
-                to effectively showcase skills and projects.
+                TypeScript featuring an interactive and user-friendly interface.
               </li>
               <li>
-                Applied Tailwind CSS for responsive, mobile-first design,
-                ensuring consistent performance and visual quality across
-                devices.
-          
-           ZZZZZZZ    </li>
-              <li>
-                Built modular, scalable components with efficient state
-                management to maximize code reuse and maintainability. Employed
-                Git and GitHub for version control, facilitating collaborative
-                development and streamlined CI/CD deployment workflows.
+                Applied Tailwind CSS for responsive, mobile-first design ensuring
+                consistent performance across devices.
               </li>
               <li>
-                Optimized site performance using Next.js server-side rendering
-                and code-splitting techniques, resulting in faster load times,
-                improved SEO, and enhanced user experience.
+                Built modular components with efficient state management to
+                maximize reuse and maintainability.
+              </li>
+              <li>
+                Optimized performance using server-side rendering and
+                code-splitting, resulting in faster load times and improved SEO.
               </li>
             </ul>
-          </div>
-        </section>
+          </article>
+        </motion.div>
 
         {/* Experience */}
-        <section className="mb-10">
-          <h3 className="portfolio-headings">Work Experience</h3>
-          <div>
-            <h4 className="text-lg font-bold text-white">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={4}
+          variants={fadeIn}
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+            Work Experience
+          </h2>
+
+          <article>
+            <h3 className="text-xl font-bold mb-1 text-white">
               Amazon - IT Support Specialist II
-            </h4>
-            <p className="portfolio-content">
+            </h3>
+            <time className="text-sm text-gray-600 mb-3 block">
               11/2022 - Present · New Jersey
-            </p>
-            <ul className="list-disc list-inside portfolio-content space-y-1 mt-1">
+            </time>
+            <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
               <li>
-                Provide technical support to over 700 employees, efficiently
-                troubleshooting hardware and software issues to maintain
-                seamless IT operations and minimize downtime.
+                Provide technical support to 700+ employees, troubleshooting
+                hardware and software issues to maintain seamless IT operations.
               </li>
               <li>
-                Collaborated with cross-functional teams to implement IT
-                solutions that improved operational efficiency by 15%,
-                streamlining workflows and enhancing productivity across
-                departments.
+                Collaborated with cross-functional teams to improve operational
+                efficiency by 15%, streamlining workflows and boosting productivity.
               </li>
               <li>
-                Managed IT infrastructure including hardware/software
-                installations, network configurations, and system upgrades,
-                ensuring 99.9% system uptime and compliance with security
-                protocols.
+                Managed IT infrastructure including installs, network configs,
+                and system upgrades, ensuring 99.9% uptime and security compliance.
               </li>
               <li>
-                Monitored and resolved an average of 50+ IT tickets weekly
-                within defined SLAs, delivering timely and effective technical
-                assistance that reduced issue resolution time by 99% and
-                improved end-user satisfaction.
+                Resolved 50+ IT tickets weekly within SLAs, reducing issue
+                resolution time by 99% and improving end-user satisfaction.
               </li>
             </ul>
-          </div>
-        </section>
+          </article>
+        </motion.div>
 
         {/* Education */}
-        <section className="mb-10">
-          <h3 className="portfolio-headings">Education</h3>
-          <ul className="list-disc list-inside portfolio-content space-y-1">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={5}
+          variants={fadeIn}
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+            Education
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl text-lg">
             <li>
-              Master's Degree in Computer Science - Western Governors
-              University, Salt Lake City, Utah
+              Master&#39;s Degree in Computer Science - Western Governors University,
+              Salt Lake City, Utah
             </li>
             <li>
-              Bachelor's Degree in Computer Science - Western Governors
-              University, Salt Lake City, Utah
+              Bachelor&#39;s Degree in Computer Science - Western Governors University,
+              Salt Lake City, Utah
             </li>
           </ul>
-        </section>
+        </motion.div>
 
         {/* Achievements */}
-        <section>
-          <h3 className="portfolio-headings">Achievements</h3>
-          <ul className="list-disc list-inside portfolio-content space-y-1">
-            <li className="font-bold">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={6}
+          variants={fadeIn}
+        >
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+            Achievements
+          </h2>
+          <ul className="list-disc list-inside space-y-3 text-gray-400 max-w-3xl text-lg">
+            <li className="font-semibold">
               Foundation: Data, Data, Everywhere - Amazon, Coursera - 12/01/2021
             </li>
-
-            <li className="font-bold">
+            <li className="font-semibold">
               Amazon Web Services - Amazon, Coursera - 12/01/2020
             </li>
           </ul>
-        </section>
+        </motion.div>
+      </section>
 
-        <div className="flex justify-end mt-5">
-          <button className="hero-btns">
-            <a href="/QuaidTahirResume.pdf">Download PDF</a>
-          </button>
-
-          <button className="hero-btns">
-            <a href="/QuaidTahirResume.docx">Download docx</a>
-          </button>
-        </div>
-      </div>
-    </div>
+      {/* Download Resume Buttons */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={7}
+        variants={fadeIn}
+        className="mt-16 flex justify-center gap-8"
+      >
+        <a
+          href="/QuaidTahirResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold hover:bg-gray-300 transition"
+        >
+          Download PDF
+        </a>
+        <a
+          href="/QuaidTahirResume.docx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition"
+        >
+          Download DOCX
+        </a>
+      </motion.div>
+    </main>
   );
 }

@@ -5,7 +5,7 @@ import { projects } from "@/data/projectList";
 
 export default function Works() {
   return (
-    <section className="mb-2">
+    <section className="mb-20">
       <Timeline data={projects} />
 
       <div className="mx-30 py-10">
@@ -64,9 +64,9 @@ export default function Works() {
             Cloudinary.
           </li>
           <li>
-            <strong>SEO & Performance:</strong> Automatic generation of
+            <strong>SEO &amp; Performance:</strong> Automatic generation of
             metadata, sitemap, and optimized loading strategies leveraging
-            Next.js's SSR/SSG capabilities.
+            Next.js&rsquo;s SSR/SSG capabilities.
           </li>
           <li>
             <strong>Deployment:</strong> One-click publishing integrated with
@@ -79,8 +79,7 @@ export default function Works() {
         </ul>
       </div>
 
-            <div className="h-[400px]">123</div>
-
+      <div className="h-[400px]">123</div>
     </section>
   );
 }
