@@ -125,7 +125,7 @@ export default function Portfolio() {
             <h3 className="text-xl font-bold mb-1 text-white">
               Portfolio Website Project
             </h3>
-            <time className="text-sm text-gray-600 mb-3 block">04/2024</time>
+            <time className="text-sm text-gray-600 mb-3 block">June 2025</time>
             <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
               <li>
                 Developed a dynamic portfolio website using Next.js, React, and
@@ -163,7 +163,7 @@ export default function Portfolio() {
               Amazon - IT Support Specialist II
             </h3>
             <time className="text-sm text-gray-600 mb-3 block">
-              11/2022 - Present · New Jersey
+              Nov 2022 - Present · New Jersey
             </time>
             <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
               <li>
