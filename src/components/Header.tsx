@@ -5,27 +5,28 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/works", label: "Works" },
-  // { href: "/papers", label: "Papers" },
-  // { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
-
 export default function Header() {
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/portfolio", label: "Portfolio" },
+    { href: "/works", label: "Works" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <nav className="max-w-7xl mx-auto px-5 md:px-10 flex justify-between items-center h-16">
-        <Link href="/" className="text-white font-extrabold text-5xl tracking-wider">
+        <Link
+          href="/"
+          className="text-white font-extrabold text-5xl tracking-wider"
+        >
           QuaidTahir
         </Link>
 
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 relative">
           {navItems.map(({ href, label }) => {
             const isActive = pathname === href;
 
@@ -35,20 +36,25 @@ export default function Header() {
                 href={href}
                 className={`relative font-semibold uppercase tracking-wide transition-colors px-3 py-2 rounded-md ${
                   isActive
-                    ? "text-white bg-gradient-to-r "
+                    ? "text-white bg-gradient-to-r"
                     : "text-white/70 hover:text-white"
                 }`}
                 aria-current={isActive ? "page" : undefined}
               >
                 {label}
 
-                {isActive && (
-                  <motion.span
-                    layoutId="active-underline"
-                    className="absolute left-0 bottom-0 h-0.5 w-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"
-                    transition={{ type: "tween", stiffness: 500, damping: 30 }}
-                  />
-                )}
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.span
+                      key={href}
+                      initial={{ opacity: 0, scaleX: 0 }}
+                      animate={{ opacity: 1, scaleX: 1 }}
+                      exit={{ opacity: 0, scaleX: 0 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      className="absolute left-0 bottom-0 h-0.5 w-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 origin-left"
+                    />
+                  )}
+                </AnimatePresence>
               </Link>
             );
           })}
@@ -90,12 +96,17 @@ export default function Header() {
                 {navItems.map(({ href, label }) => {
                   const isActive = pathname === href;
                   return (
-                    <li key={href} className="border-b border-gray-700 last:border-none">
+                    <li
+                      key={href}
+                      className="border-b border-gray-700 last:border-none"
+                    >
                       <Link
                         href={href}
                         onClick={() => setMobileMenuOpen(false)}
                         className={`block px-6 py-3 text-lg font-semibold uppercase tracking-wide transition-colors ${
-                          isActive ? "text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" : "text-white/80 hover:text-white"
+                          isActive
+                            ? "text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"
+                            : "text-white/80 hover:text-white"
                         }`}
                         aria-current={isActive ? "page" : undefined}
                       >

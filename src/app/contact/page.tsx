@@ -86,7 +86,7 @@ export default function Contact() {
         <section className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight">Let’s Connect</h1>
           <p className="text-lg text-gray-300">
-            I'm Quaid Tahir, a full-stack developer focused on performance,
+            I’m Quaid Tahir, a full-stack developer focused on performance,
             usability, and clean, scalable codebases.
           </p>
           <p className="text-lg text-gray-300">
