@@ -201,7 +201,6 @@ export default function Portfolio() {
           </ul>
         </motion.div>
 
-        {/* Achievements */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -214,10 +213,15 @@ export default function Portfolio() {
           </h2>
           <ul className="list-disc list-inside space-y-3 text-gray-400 max-w-3xl text-lg">
             <li className="font-semibold">
-              Foundation: Data, Data, Everywhere - Amazon, Coursera - 12/01/2021
+              Foundation: Data, Data, Everywhere - Amazon, Coursera (2022)
             </li>
+
             <li className="font-semibold">
-              Amazon Web Services - Amazon, Coursera - 12/01/2020
+              Amazon Web Services - Amazon, Coursera (2020)
+            </li>
+
+            <li className="font-semibold">
+              CompTIA Security+ (2025)
             </li>
           </ul>
         </motion.div>
