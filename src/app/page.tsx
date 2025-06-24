@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import TechStackMarquee from "@/components/TechStackMarquee";
-import About from "./about/page";
+import About from "@/app/about/page";
 import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
   // https://daisyui.com/components/countdown/ coundown page
   // https://www.heroui.com/docs/components/tabs sign up and sign in?
   // https://daisyui.com/components/mockup-phone/ iphone mockup
-  
+
   return (
     <main>
       <Hero />
