@@ -1,5 +1,7 @@
 import Hero from "@/components/Hero";
 import TechStackMarquee from "@/components/TechStackMarquee";
+import About from "./about/page";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   // https://ui.aceternity.com/components/lamp-effect as loading for new pages?
@@ -31,6 +33,8 @@ export default function Home() {
     <main>
       <Hero />
       <TechStackMarquee />
+      <About />
+      <CallToAction />
     </main>
   );
 }

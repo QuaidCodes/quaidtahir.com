@@ -59,6 +59,15 @@ export default function Portfolio() {
           >
             github.com/QuaidCodes
           </Link>
+          <span>|</span>
+          <Link
+            href="https://github.com/QuaidCodes"
+            target="_blank"
+            className="hover:text-white transition underline"
+            aria-label="Visit GitHub profile"
+          >
+            www.linkedin.com/in/quaidtahir
+          </Link>
         </div>
       </motion.header>
 
@@ -220,9 +229,7 @@ export default function Portfolio() {
               Amazon Web Services - Amazon, Coursera (2020)
             </li>
 
-            <li className="font-semibold">
-              CompTIA Security+ (2025)
-            </li>
+            <li className="font-semibold">CompTIA Security+ (2025)</li>
           </ul>
         </motion.div>
       </section>
