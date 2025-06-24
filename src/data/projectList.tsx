@@ -5,14 +5,14 @@ export const projects: TimelineEntry[] = [
     title: "June 2025",
     content: (
       <div>
-        <h3 className="text-2xl font-semibold">Quaid Tahir Portfolio</h3>
+        <h3 className="text-2xl font-semibold py-1">Quaid Tahir Portfolio</h3>
         <p className="text-sm text-neutral-500">
           This portfolio is a fully modern, production-grade web application
-          built with Next.js, React, and TypeScript. It&rsquo;s styled using Tailwind
-          CSS for utility-first design, and enhanced with smooth, responsive
-          animations powered by Framer Motion. Behind the scenes, the project is
-          deployed on Vercel with a continuous integration and continuous
-          deployment (CI/CD) pipeline, ensuring that every update is
+          built with Next.js, React, and TypeScript. It&rsquo;s styled using
+          Tailwind CSS for utility-first design, and enhanced with smooth,
+          responsive animations powered by Framer Motion. Behind the scenes, the
+          project is deployed on Vercel with a continuous integration and
+          continuous deployment (CI/CD) pipeline, ensuring that every update is
           automatically tested and delivered with speed and reliability. From
           performance optimization to component-based architecture, every detail
           reflects my focus on building scalable, maintainable, and user-centric
@@ -26,41 +26,79 @@ export const projects: TimelineEntry[] = [
     content: (
       <div>
         <h3 className="text-2xl font-semibold">Web Site Builder</h3>
-        <p className="text-sm text-neutral-500">
-          This project is a full-stack web-based project planner designed to
-          help individuals and teams organize tasks, track progress, and manage
-          workflows in a flexible and visually structured way — similar to tools
-          like Monday.com and Trello. The frontend is developed using Next.js
-          with React and TypeScript, following a modular, component-driven
-          architecture. Styling is handled using Tailwind CSS for utility-first,
-          responsive design, and enhanced with Framer Motion to create smooth
-          transitions and interactive animations. The interface supports both
-          light and dark modes, with layouts optimized for desktop and mobile
-          use. The backend is powered by Node.js using Express.js (or a similar
-          framework) to create a scalable RESTful API. The backend handles all
-          business logic, including project and task management, user
-          permissions, real-time updates, and notifications. It interacts with a
-          PostgreSQL (or optionally MongoDB) database, using Prisma or Mongoose
-          as the ORM/ODM layer for managing structured data like boards,
-          columns, rows, status labels, deadlines, and user assignments.
-          Authentication and authorization are implemented using JWT-based
-          tokens or session-based auth (via express-session) to support secure
-          user login, role-based access, and team management features.
-          Optionally, OAuth 2.0 providers (e.g., Google, GitHub) are supported
-          for social login. The app supports real-time collaboration features
-          via WebSockets (using Socket.IO on top of Node.js) to broadcast
-          updates like task edits, comments, and board changes across all
-          connected clients without requiring manual refresh. The codebase is
-          version-controlled with Git and hosted on GitHub, with CI/CD pipelines
-          configured using GitHub Actions. This ensures that every commit is
-          automatically linted, tested, and deployed. The production app is
-          deployed on Vercel for the frontend and Render, Railway, or
-          DigitalOcean App Platform for the Node.js backend — ensuring reliable,
-          scalable performance with environment variable support and automated
-          redeploys. Planned extensions include Gantt chart views, Slack/email
-          integration, advanced filtering, team dashboards, and analytics to
-          measure project velocity and performance.
-        </p>
+        <div className="py-1">
+          <p className="text-sm text-neutral-500">
+            This web-based site builder is a dynamic, user-friendly platform
+            that enables users to create, customize, and deploy fully responsive
+            websites without writing code. Designed for flexibility and
+            scalability, it leverages a modern full-stack architecture optimized
+            for performance, usability, and developer productivity.
+          </p>
+
+          <h3 className="font-bold underline mt-5">Frontend:</h3>
+          <p className="text-sm text-neutral-500">
+            Built with Next.js and React using TypeScript to ensure type safety
+            and maintainability across the codebase. The UI is styled with
+            Tailwind CSS, providing a utility-first approach for rapid styling
+            and responsive design. Smooth animations and transitions are powered
+            by Framer Motion, enhancing user experience with intuitive
+            drag-and-drop interactions, live previews, and real-time updates.
+          </p>
+
+          <h3 className="font-bold underline mt-5">Backened</h3>
+          <p className="text-sm text-neutral-500">
+            The backend is implemented using Node.js with an API layer (REST or
+            tRPC) to handle content management, user authentication, and site
+            deployments. It integrates with a database (such as PostgreSQL or
+            MongoDB) via an ORM like Prisma or Mongoose, managing user projects,
+            templates, assets, and published site data.
+          </p>
+
+          <h3 className="font-bold underline mt-5">Features: </h3>
+          <ul>
+            <li className="text-sm text-neutral-500">
+              <strong>Drag-and-drop page builder:</strong> Users can visually
+              design pages with pre-built components and customizable layouts.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>Template system:</strong> Provides starter templates that
+              users can modify to speed up site creation.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>Real-time collaboration:</strong> Optional feature using
+              WebSockets (Socket.IO) allowing multiple users to edit
+              simultaneously.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>Authentication & Authorization:</strong> Managed securely
+              with JWT or third-party providers via NextAuth or Clerk.js.
+            </li>
+            <li className="text-sm text-neutral-500">
+              <strong>Media management:</strong> Upload and organize images,
+              videos, and other assets using services like UploadThing or
+              Cloudinary.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>SEO &amp; Performance:</strong> Automatic generation of
+              metadata, sitemap, and optimized loading strategies leveraging
+              Next.js&rsquo;s SSR/SSG capabilities.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>Deployment:</strong> One-click publishing integrated with
+              platforms like Vercel, enabling seamless live site updates.
+            </li>
+
+            <li className="text-sm text-neutral-500">
+              <strong>Extensibility:</strong> Plugin architecture for adding
+              custom components and integrations.
+            </li>
+          </ul>
+        </div>
       </div>
     ),
   },

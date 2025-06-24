@@ -84,7 +84,7 @@ export default function Contact() {
       {/* About Me Section */}
       <section className="md:w-1/3 flex flex-col justify-center space-y-6">
         <h1 className="text-4xl font-extrabold tracking-tight">Hi, I’m Quaid Tahir</h1>
-        <p className="text-lg leading-relaxed">
+      <p className="text-lg leading-relaxed">
           I’m a passionate full-stack developer specializing in building performant, scalable, and user-friendly web applications using Next.js, React, TypeScript, and Node.js.  
         </p>
         <p className="text-lg leading-relaxed">

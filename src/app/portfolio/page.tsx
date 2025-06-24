@@ -15,14 +15,13 @@ const fadeIn: Variants = {
 export default function Portfolio() {
   return (
     <main className="min-h-screen bg-black text-white px-6 py-16 max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
-      {/* Header */}
       <motion.header
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         custom={0}
         variants={fadeIn}
-        className="text-center mb-16"
+        className="text-center mb-16 mt-10"
       >
         <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight uppercase select-none">
           Quaid Tahir
@@ -64,7 +63,6 @@ export default function Portfolio() {
       </motion.header>
 
       <section className="space-y-14 leading-relaxed">
-        {/* Professional Summary */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -85,7 +83,6 @@ export default function Portfolio() {
           </p>
         </motion.div>
 
-        {/* Technical Skills */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -98,12 +95,11 @@ export default function Portfolio() {
           </h2>
           <p className="text-gray-500 font-mono tracking-wide select-text">
             Python &nbsp;|&nbsp; React &nbsp;|&nbsp; Node.js &nbsp;|&nbsp;
-            Next.js &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; TypeScript &nbsp;|&nbsp;
-            Java &nbsp;|&nbsp; C++
+            Next.js &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; TypeScript
+            &nbsp;|&nbsp; Java &nbsp;|&nbsp; C++
           </p>
         </motion.div>
 
-        {/* Projects */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -127,8 +123,8 @@ export default function Portfolio() {
                 TypeScript featuring an interactive and user-friendly interface.
               </li>
               <li>
-                Applied Tailwind CSS for responsive, mobile-first design ensuring
-                consistent performance across devices.
+                Applied Tailwind CSS for responsive, mobile-first design
+                ensuring consistent performance across devices.
               </li>
               <li>
                 Built modular components with efficient state management to
@@ -142,7 +138,6 @@ export default function Portfolio() {
           </article>
         </motion.div>
 
-        {/* Experience */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -168,11 +163,13 @@ export default function Portfolio() {
               </li>
               <li>
                 Collaborated with cross-functional teams to improve operational
-                efficiency by 15%, streamlining workflows and boosting productivity.
+                efficiency by 15%, streamlining workflows and boosting
+                productivity.
               </li>
               <li>
                 Managed IT infrastructure including installs, network configs,
-                and system upgrades, ensuring 99.9% uptime and security compliance.
+                and system upgrades, ensuring 99.9% uptime and security
+                compliance.
               </li>
               <li>
                 Resolved 50+ IT tickets weekly within SLAs, reducing issue
@@ -182,7 +179,6 @@ export default function Portfolio() {
           </article>
         </motion.div>
 
-        {/* Education */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -195,12 +191,12 @@ export default function Portfolio() {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl text-lg">
             <li>
-              Master&#39;s Degree in Computer Science - Western Governors University,
-              Salt Lake City, Utah
+              Master&#39;s Degree in Computer Science - Western Governors
+              University, Salt Lake City, Utah
             </li>
             <li>
-              Bachelor&#39;s Degree in Computer Science - Western Governors University,
-              Salt Lake City, Utah
+              Bachelor&#39;s Degree in Computer Science - Western Governors
+              University, Salt Lake City, Utah
             </li>
           </ul>
         </motion.div>
@@ -227,7 +223,6 @@ export default function Portfolio() {
         </motion.div>
       </section>
 
-      {/* Download Resume Buttons */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -237,20 +232,20 @@ export default function Portfolio() {
         className="mt-16 flex justify-center gap-8"
       >
         <a
-          href="/QuaidTahirResume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold hover:bg-gray-300 transition"
-        >
-          Download PDF
-        </a>
-        <a
-          href="/QuaidTahirResume.docx"
+          href="/QuaidTahirPortfolio.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition"
         >
-          Download DOCX
+          Download PDF
+        </a>
+        <a
+          href="/QuaidTahirPortfolio.doc"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition"
+        >
+          Download DOC
         </a>
       </motion.div>
     </main>

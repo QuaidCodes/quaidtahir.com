@@ -21,12 +21,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <nav className="max-w-7xl mx-auto px-5 md:px-10 flex justify-between items-center h-16">
-        {/* Logo or Brand */}
-        <Link href="/" className="text-white font-extrabold text-xl tracking-wider">
+        <Link href="/" className="text-white font-extrabold text-5xl tracking-wider">
           QuaidTahir
         </Link>
 
-        {/* Desktop Nav Links */}
         <div className="hidden md:flex gap-8">
           {navItems.map(({ href, label }) => {
             const isActive = pathname === href;
@@ -37,7 +35,7 @@ export default function Header() {
                 href={href}
                 className={`relative font-semibold uppercase tracking-wide transition-colors px-3 py-2 rounded-md ${
                   isActive
-                    ? "text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 shadow-lg"
+                    ? "text-white bg-gradient-to-r "
                     : "text-white/70 hover:text-white"
                 }`}
                 aria-current={isActive ? "page" : undefined}
@@ -48,7 +46,7 @@ export default function Header() {
                   <motion.span
                     layoutId="active-underline"
                     className="absolute left-0 bottom-0 h-0.5 w-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"
-                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                    transition={{ type: "tween", stiffness: 500, damping: 30 }}
                   />
                 )}
               </Link>
@@ -56,7 +54,6 @@ export default function Header() {
           })}
         </div>
 
-        {/* Mobile Hamburger Button */}
         <button
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
@@ -80,7 +77,6 @@ export default function Header() {
           />
         </button>
 
-        {/* Mobile Menu Drawer */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
