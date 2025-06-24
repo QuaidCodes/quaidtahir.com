@@ -61,12 +61,12 @@ export default function Portfolio() {
           </Link>
           <span>|</span>
           <Link
-            href="https://github.com/QuaidCodes"
+            href="https://linkedin.com/in/quaidtahir"
             target="_blank"
             className="hover:text-white transition underline"
-            aria-label="Visit GitHub profile"
+            aria-label="Visit LinkedIn profile"
           >
-            www.linkedin.com/in/quaidtahir
+           linkedin.com/quaidtahir
           </Link>
         </div>
       </motion.header>
@@ -117,11 +117,11 @@ export default function Portfolio() {
           variants={fadeIn}
           className=""
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
             Projects
           </h2>
 
-          <article className="mb-8">
+          <article className="mb-3">
             <h3 className="text-xl font-bold mb-1 text-white">
               Portfolio Website Project
             </h3>
@@ -154,32 +154,36 @@ export default function Portfolio() {
           custom={4}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
             Work Experience
           </h2>
-
           <article>
             <h3 className="text-xl font-bold mb-1 text-white">
               Amazon - IT Support Specialist II
             </h3>
+
             <time className="text-sm text-gray-600 mb-3 block">
               Nov 2022 - Present · New Jersey
             </time>
+
             <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
               <li>
                 Provide technical support to 700+ employees, troubleshooting
                 hardware and software issues to maintain seamless IT operations.
               </li>
+
               <li>
                 Collaborated with cross-functional teams to improve operational
                 efficiency by 15%, streamlining workflows and boosting
                 productivity.
               </li>
+
               <li>
                 Managed IT infrastructure including installs, network configs,
                 and system upgrades, ensuring 99.9% uptime and security
                 compliance.
               </li>
+
               <li>
                 Resolved 50+ IT tickets weekly within SLAs, reducing issue
                 resolution time by 99% and improving end-user satisfaction.
@@ -195,7 +199,7 @@ export default function Portfolio() {
           custom={5}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
             Education
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl text-lg">
@@ -217,7 +221,7 @@ export default function Portfolio() {
           custom={6}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-6">
+          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
             Achievements
           </h2>
           <ul className="list-disc list-inside space-y-3 text-gray-400 max-w-3xl text-lg">
