@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { z } from "zod";
 
+
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required!").max(20),
   lastName: z.string().min(1, "Last name is required!").max(20),
