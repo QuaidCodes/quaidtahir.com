@@ -66,7 +66,7 @@ export default function Portfolio() {
             className="hover:text-white transition underline"
             aria-label="Visit LinkedIn profile"
           >
-           linkedin.com/quaidtahir
+            linkedin.com/quaidtahir
           </Link>
         </div>
       </motion.header>
@@ -202,16 +202,13 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
             Education
           </h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl text-lg">
-            {/* <li>
-              Master&#39;s Degree in Computer Science - Western Governors
-              University, Salt Lake City, Utah
-            </li> */}
-            <li>
-              Bachelor&#39;s Degree in Computer Science - Western Governors
-              University, Salt Lake City, Utah
-            </li>
-          </ul>
+
+          <div className="space-y-2 text-gray-400 max-w-3xl text-lg">
+            <p>Bachelor of Science in Computer Science</p>
+            <p className="italic">
+              Western Governors University — Salt Lake City, UT
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
