@@ -14,7 +14,7 @@ const fadeIn: Variants = {
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-16 max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
+    <main className="min-h-screen px-6 py-16 max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
       <motion.header
         initial="hidden"
         whileInView="visible"
