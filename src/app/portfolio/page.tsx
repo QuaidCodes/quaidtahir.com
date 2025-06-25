@@ -203,10 +203,10 @@ export default function Portfolio() {
             Education
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl text-lg">
-            <li>
+            {/* <li>
               Master&#39;s Degree in Computer Science - Western Governors
               University, Salt Lake City, Utah
-            </li>
+            </li> */}
             <li>
               Bachelor&#39;s Degree in Computer Science - Western Governors
               University, Salt Lake City, Utah
