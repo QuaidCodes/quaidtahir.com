@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -34,15 +30,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
-      ref={containerRef}
-    >
+    <div className="w-full font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl w-full">
+        <h2 className="text-lg md:text-4xl mb-4 max-w-4xl w-full">
           Milestones of Innovation
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base w-full">
+        <p className="text-neutral-500 dark:text-neutral-300 text-sm md:text-base w-full">
           Over time, I have developed a diverse range of projects that highlight
           my skills and growth as a developer. Each project reflects my journey
           in mastering different technologies, solving challenges, and creating
@@ -51,12 +44,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           solutions.
         </p>
 
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base w-full mt-7">
-          Every project here is more than just lines of code — it&rsquo;s a part of my
-          journey. These are the ideas I&rsquo;ve explored, the problems I&rsquo;ve solved,
-          and the skills I&rsquo;ve picked up along the way. Some are small
-          experiments, others are fully polished apps, but each one reflects how
-          I think, how I learn, and how I bring things to life through code.
+        <p className="text-neutral-500 dark:text-neutral-300 text-sm md:text-base w-full mt-7">
+          Every project here is more than just lines of code — it&rsquo;s a part
+          of my journey. These are the ideas I&rsquo;ve explored, the problems
+          I&rsquo;ve solved, and the skills I&rsquo;ve picked up along the way.
+          Some are small experiments, others are fully polished apps, but each
+          one reflects how I think, how I learn, and how I bring things to life
+          through code.
         </p>
       </div>
 
