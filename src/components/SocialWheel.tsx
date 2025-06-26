@@ -1,47 +1,28 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
-export default function SocialWheel() {
+export default function SocialIcons() {
   return (
-    <div className="w-40 h-40 rounded-full overflow-hidden flex shadow-lg">
-      {/* Left half - LinkedIn */}
-      <motion.div
-        className="w-1/2 h-full bg-white flex items-center justify-center cursor-pointer"
-        whileHover={{ backgroundColor: "#0077b5", scale: 1.05 }}
-      >
-        <Link
-          href="https://linkedin.com"
-          target="_blank"
-          aria-label="LinkedIn"
-          className="flex items-center justify-center w-full h-full " 
-        >
+    <div className="flex gap-4 items-center">
+      <Link href="https://linkedin.com/in/quaidtahir" target="_blank" aria-label="LinkedIn">
+        <div className="group w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md cursor-pointer transition-colors duration-300 hover:bg-[#0077b5]">
           <FaLinkedin
-            className="text-[#0077b5] transition-colors duration-300"
-            size={48}
+            size={28}
+            className="text-[#0077b5] group-hover:text-white transition-colors duration-300"
           />
-        </Link>
-      </motion.div>
+        </div>
+      </Link>
 
-      {/* Right half - GitHub */}
-      <motion.div
-        className="w-1/2 h-full bg-white flex items-center justify-center cursor-pointer"
-        whileHover={{ backgroundColor: "#000000", scale: 1.05 }}
-      >
-        <Link
-          href="https://github.com"
-          target="_blank"
-          aria-label="GitHub"
-          className="flex items-center justify-center w-full h-full"
-        >
+      <Link href="https://github.com/QuaidCodes" target="_blank" aria-label="GitHub">
+        <div className="group w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md cursor-pointer transition-colors duration-300 hover:bg-black">
           <FaGithub
-            className="text-black transition-colors duration-300 hover:text-white"
-            size={48}
+            size={28}
+            className="text-black group-hover:text-white transition-colors duration-300"
           />
-        </Link>
-      </motion.div>
+        </div>
+      </Link>
     </div>
   );
 }
