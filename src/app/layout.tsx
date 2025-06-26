@@ -20,19 +20,21 @@ export const metadata: Metadata = {
     "Next.js",
     "tailwind",
     "typescript",
+    "Developer",
+    
   ],
   openGraph: {
     title: "Quaid Tahir | Software Engineer",
     description:
       "Portfolio site of Quaid Tahir, showcasing projects and skills.",
-    url: "www.quaidtahir.com",
+    url: "https://www.quaidtahir.com",
     siteName: "Quaid Tahir Portfolio",
     images: [
       {
-        url: "public/www.quaidtahir.com_preview.png",
+        url: "https://www.quaidtahir.com/images/www.quaidtahir.com_preview.png",
         width: 1200,
         height: 630,
-        alt: "Screenshot of my portfolio site",
+        alt: "Screenshot of Quaid Tahir's portfolio website",
       },
     ],
     locale: "en_US",
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quaid Tahir Portfolio",
+    title: "Quaid Tahir Portfolio | Software Engineer",
     description: "Portfolio site of Quaid Tahir, showcasing projects and skills.",
-    images: ["public/www.quaidtahir.com_preview.png"],
+    images: ["https://www.quaidtahir.com/preview.png"],
   },
 };
 
