@@ -40,6 +40,15 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
+            className="mt-6 text-base md:text-lg text-neutral-400 max-w-xl italic"
+          >
+            Software Engineer
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
             className="mt-6 text-base md:text-lg text-neutral-400 max-w-xl"
           >

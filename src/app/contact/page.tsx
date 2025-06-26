@@ -1,8 +1,8 @@
 "use client";
 
+import SocialWheel from "@/components/SocialWheel";
 import { useState, useEffect } from "react";
 import { z } from "zod";
-
 
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required!").max(20),
@@ -82,7 +82,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-40">
+    <section className="min-h-screen bg-black text-white px-6 py-40">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <section className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight">Let’s Connect</h1>
@@ -104,9 +104,11 @@ export default function Contact() {
               opportunities
             </p>
           </div>
+
+          <SocialWheel />
         </section>
 
-        <section className="bg-[#f5f5f5] text-black dark:bg-white dark:text-black shadow-2xl rounded-2xl p-8 space-y-6 border dark:border-zinc-300">
+        <div className="bg-[#f5f5f5] text-black dark:bg-white dark:text-black shadow-2xl rounded-2xl p-8 space-y-6 border dark:border-zinc-300">
           <h2 className="text-2xl font-semibold">Send a Message</h2>
           <form
             onSubmit={handleSubmit}
@@ -235,8 +237,8 @@ export default function Contact() {
               </p>
             )}
           </form>
-        </section>
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
