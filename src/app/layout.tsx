@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     "tailwind",
     "typescript",
     "Developer",
-    
+    "Software",
+    "New Jersey",
+    "SDE",
+    "Amazon",
+    "IT",
   ],
   openGraph: {
     title: "Quaid Tahir | Software Engineer",
@@ -43,8 +47,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Quaid Tahir Portfolio | Software Engineer",
-    description: "Portfolio site of Quaid Tahir, showcasing projects and skills.",
-    images: ["https://www.quaidtahir.com/preview.png"],
+    description:
+      "Portfolio site of Quaid Tahir, showcasing projects and skills.",
+    images: [
+      "https://www.quaidtahir.com/images/www.quaidtahir.com_preview.png",
+    ],
   },
 };
 
