@@ -37,8 +37,8 @@ export default function GithubContributionCalendar({
   }, []);
 
   // Filter contributions to only include days from the specified year
-const filterYearData = (data: Activity[]) =>
-  data.filter((day) => new Date(day.date).getFullYear() === year);
+  const filterYearData = (data: Activity[]) =>
+    data.filter((day) => new Date(day.date).getFullYear() === year);
 
   // Format tooltip text
   const formatTooltipText = (count: number, date: string) => {
@@ -89,7 +89,6 @@ const filterYearData = (data: Activity[]) =>
             blockSize={16}
             blockMargin={5}
             fontSize={14}
-            showWeekdayLabels
             transformData={filterYearData}
             style={{ width: "100%", minWidth: 320 }}
             renderBlock={(block, { date, count }) =>
