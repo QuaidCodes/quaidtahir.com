@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <section className="min-h-screen bg-black text-white px-6 py-40">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-        <section className="space-y-6">
+        <div className="space-y-6 sm:order-1 order-2">
           <h1 className="text-4xl font-bold leading-tight">Let’s Connect</h1>
           <p className="text-lg text-gray-300">
             I’m Quaid Tahir, a full-stack developer focused on performance,
@@ -106,9 +106,9 @@ export default function Contact() {
           </div>
 
           <SocialWheel />
-        </section>
+        </div>
 
-        <div className="bg-[#f5f5f5] text-black dark:bg-white dark:text-black shadow-2xl rounded-2xl p-8 space-y-6 border dark:border-zinc-300">
+        <div className="bg-[#f5f5f5] text-black dark:bg-white dark:text-black shadow-2xl rounded-2xl p-8 space-y-6 border dark:border-zinc-300 sm:order-2 order-1">
           <h2 className="text-2xl font-semibold">Send a Message</h2>
           <form
             onSubmit={handleSubmit}

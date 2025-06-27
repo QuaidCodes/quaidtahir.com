@@ -21,7 +21,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-5 md:px-10 flex justify-between items-center h-16">
         <Link
           href="/"
-          className="text-white font-extrabold text-5xl tracking-wider"
+          className="text-white font-extrabold md:text-5xl text-3xl tracking-wider"
         >
           QuaidTahir
         </Link>

@@ -8,8 +8,8 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 export default function Hero() {
   return (
     <BackgroundBeamsWithCollision>
-      <section className="w-full h-screen flex items-center justify-center px-6 md:px-12 text-white">
-        <div className="w-1/2 text-left">
+      <section className="w-full h-screen flex items-center justify-center px-6 md:px-12 text-white ">
+        <div className="lg:w-1/2 text-left">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -64,13 +64,13 @@ export default function Hero() {
           >
             <Link
               href="/portfolio"
-              className="px-6 py-2 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all"
+              className="px-3 py-1 border border-white font-semibold rounded-full hover:bg-white hover:text-black transition-all lg:px-6 lg:py-2 text-nowrap"
             >
               View Portfolio
             </Link>
             <Link
               href="/works"
-              className="px-6 py-2 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all"
+              className="px-3 py-1 border border-white font-semibold rounded-full hover:bg-white hover:text-black transition-all lg:px-6 lg:py-2 text-nowrap"
             >
               View Works
             </Link>

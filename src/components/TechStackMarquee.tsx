@@ -41,9 +41,9 @@ export default function TechStackMarquee() {
   const repeated = useMemo(() => [...techStack, ...techStack], []);
 
   return (
-    <div className="relative overflow-hidden border-y border-neutral-800 bg-neutral-950 py-6">
+    <div className="relative overflow-hidden border-y border-neutral-800 bg-neutral-950 py-2 md:py-6">
       <motion.div
-        className="flex gap-20 px-4 whitespace-nowrap will-change-transform"
+        className="flex gap-10 md:gap-20 px-4 whitespace-nowrap will-change-transform"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           ease: "linear",
@@ -57,7 +57,7 @@ export default function TechStackMarquee() {
           return (
             <span
               key={`${tech}-${i}`}
-              className={`text-lg tracking-wide text-transparent bg-clip-text ${gradient} ${font} transition-transform hover:scale-105 duration-300`}
+              className={`md:text-lg tracking-wide text-transparent bg-clip-text ${gradient} ${font} transition-transform hover:scale-105 duration-300`}
             >
               {tech}
             </span>

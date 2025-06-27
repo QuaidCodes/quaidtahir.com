@@ -14,26 +14,26 @@ const fadeIn: Variants = {
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen px-6 py-16 max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
+    <main className="min-h-screen px-6 py-16 w-full max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
       <motion.header
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         custom={0}
         variants={fadeIn}
-        className="text-center mb-16 mt-10"
+        className="text-center md:mb-16 mb-5 mt-10"
       >
-        <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight uppercase select-none">
+        <h1 className="text-3xl md:text-5xl sm:text-6xl font-extrabold tracking-tight uppercase select-none">
           Quaid Tahir
         </h1>
-        <p className="mt-2 text-lg sm:text-xl font-light text-gray-400">
+        <p className="md:mt-2 text-lg sm:text-xl font-light text-gray-400">
           Software Engineer
         </p>
-        <p className="mt-3 max-w-xl mx-auto text-gray-300 leading-relaxed">
+        <p className="hidden md:block mt-3 max-w-xl mx-auto text-gray-300 leading-relaxed">
           I build scalable, elegant software solutions that solve problems that
           matter.
         </p>
-        <div className="mt-6 flex justify-center space-x-6 text-gray-500 text-sm sm:text-base">
+        <div className="md:mt-6 mt-3 flex justify-center space-x-6 text-gray-500 text-sm sm:text-base md:flex-row flex-col">
           <a
             href="mailto:quaidtahirw@gmail.com"
             className="hover:text-white transition"
@@ -41,7 +41,7 @@ export default function Portfolio() {
           >
             quaidtahirw@gmail.com
           </a>
-          <span>|</span>
+          <span className="hidden md:inline">|</span>
           <Link
             href="https://quaidtahir.com"
             target="_blank"
@@ -50,7 +50,7 @@ export default function Portfolio() {
           >
             quaidtahir.com
           </Link>
-          <span>|</span>
+          <span className="hidden md:inline">|</span>
           <Link
             href="https://github.com/QuaidCodes"
             target="_blank"
@@ -59,7 +59,7 @@ export default function Portfolio() {
           >
             github.com/QuaidCodes
           </Link>
-          <span>|</span>
+          <span className="hidden md:inline">|</span>
           <Link
             href="https://linkedin.com/in/quaidtahir"
             target="_blank"
@@ -71,7 +71,7 @@ export default function Portfolio() {
         </div>
       </motion.header>
 
-      <section className="space-y-14 leading-relaxed">
+      <section className="md:space-y-14 space-y-5 leading-relaxed">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -79,10 +79,8 @@ export default function Portfolio() {
           custom={1}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Professional Summary
-          </h2>
-          <p className="text-gray-400 max-w-3xl">
+          <h2 className="portfolio-headings">Professional Summary</h2>
+          <p className="portfolio-content">
             Ambitious software engineer candidate pursuing a Bachelor&#39;s
             degree in Computer Science. Proficient in multiple languages with
             hands-on experience designing scalable, high-performance
@@ -99,10 +97,8 @@ export default function Portfolio() {
           custom={2}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Technical Skills
-          </h2>
-          <p className="text-gray-500 font-mono tracking-wide select-text">
+          <h2 className="portfolio-headings">Technical Skills</h2>
+          <p className="text-gray-500 font-mono md:tracking-wide select-text">
             Python &nbsp;|&nbsp; React &nbsp;|&nbsp; Node.js &nbsp;|&nbsp;
             Next.js &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; TypeScript
             &nbsp;|&nbsp; Java &nbsp;|&nbsp; C++
@@ -117,31 +113,59 @@ export default function Portfolio() {
           variants={fadeIn}
           className=""
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Projects
-          </h2>
+          <h2 className="portfolio-headings">Projects</h2>
+          <article>
+            <h3 className="portfolio-subheadings">Portfolio Website Project</h3>
+            <p className="text-sm md:text-lg">
+              <Link href="/" className="underline md:hover:underline">
+                quaidtahir.com
+              </Link>{" "}
+              — Built with Next.js, TypeScript, Tailwind CSS
+            </p>
+            <time className="text-sm text-gray-600 mbblock">June 2025</time>
 
-          <article className="mb-3">
-            <h3 className="text-xl font-bold mb-1 text-white">
-              Portfolio Website Project
-            </h3>
-            <time className="text-sm text-gray-600 mb-3 block">June 2025</time>
-            <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
+            <p className="portfolio-content mb-2">
+              Designed, developed, and deployed a modern personal portfolio
+              website to showcase my technical skills, projects, and
+              professional background. The site is fully responsive, optimized
+              for performance, and includes interactive UI elements, custom
+              animations, and a secure contact form that integrates with Resend
+              to deliver real-time email notifications.
+            </p>
+
+            <ul className="list-disc list-inside space-y-1 portfolio-content">
               <li>
-                Developed a dynamic portfolio website using Next.js, React, and
-                TypeScript featuring an interactive and user-friendly interface.
+                Developed with <strong>Next.js App Router</strong>,{" "}
+                <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>{" "}
+                to ensure scalable architecture and maintainable code.
               </li>
               <li>
-                Applied Tailwind CSS for responsive, mobile-first design
-                ensuring consistent performance across devices.
+                Integrated <strong>Framer Motion</strong> for smooth page
+                transitions and interactive animations across components.
               </li>
               <li>
-                Built modular components with efficient state management to
-                maximize reuse and maintainability.
+                Built a dynamic contact form with{" "}
+                <strong>Zod validation</strong> and{" "}
+                <strong>Resend email API</strong>, ensuring reliable message
+                delivery to my inbox.
               </li>
               <li>
-                Optimized performance using server-side rendering and
-                code-splitting, resulting in faster load times and improved SEO.
+                Deployed on <strong>Vercel</strong> with a custom domain via{" "}
+                <strong>Namecheap</strong>, ensuring fast global load times with
+                edge caching.
+              </li>
+              <li>
+                Optimized for <strong>SEO</strong>, performance (via image
+                optimization and lazy loading), and accessibility (semantic
+                HTML, keyboard navigation).
+              </li>
+              <li>
+                Mobile-first and fully responsive design with custom dark/light
+                theme support.
+              </li>
+              <li>
+                Source code hosted on <strong>GitHub</strong>, following clean
+                code practices and Git-based version control.
               </li>
             </ul>
           </article>
@@ -154,11 +178,9 @@ export default function Portfolio() {
           custom={4}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Work Experience
-          </h2>
+          <h2 className="portfolio-headings">Work Experience</h2>
           <article>
-            <h3 className="text-xl font-bold mb-1 text-white">
+            <h3 className="portfolio-subheadings">
               Amazon - IT Support Specialist II
             </h3>
 
@@ -166,7 +188,7 @@ export default function Portfolio() {
               Nov 2022 - Present · New Jersey
             </time>
 
-            <ul className="list-disc list-inside space-y-2 text-gray-400 max-w-3xl">
+            <ul className="list-disc list-inside space-y-2 portfolio-content">
               <li>
                 Provide technical support to 700+ employees, troubleshooting
                 hardware and software issues to maintain seamless IT operations.
@@ -199,11 +221,9 @@ export default function Portfolio() {
           custom={5}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Education
-          </h2>
+          <h2 className="portfolio-headings">Education</h2>
 
-          <div className="space-y-2 text-gray-400 max-w-3xl text-lg">
+          <div className="space-y-1 portfolio-content text-lg">
             <p>Bachelor of Science in Computer Science</p>
             <p className="italic">
               Western Governors University — Salt Lake City, UT
@@ -218,10 +238,8 @@ export default function Portfolio() {
           custom={6}
           variants={fadeIn}
         >
-          <h2 className="text-2xl font-semibold text-gray-200 uppercase tracking-wide mb-3">
-            Achievements
-          </h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-400 max-w-3xl text-lg">
+          <h2 className="portfolio-headings">Achievements</h2>
+          <ul className="list-disc list-inside space-y-1 portfolio-content text-lg">
             <li className="font-semibold">
               Foundation: Data, Data, Everywhere - Amazon, Coursera (2022)
             </li>
@@ -241,21 +259,22 @@ export default function Portfolio() {
         viewport={{ once: true }}
         custom={7}
         variants={fadeIn}
-        className="mt-16 flex justify-center gap-8"
+        className="md:mt-16 mt-8 flex justify-center flex-col md:flex-row md:gap-8 gap-3"
       >
         <a
-          href="/QuaidTahirPortfolio.pdf"
+          href="/QuaidTahirPortfolio.pdff"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition"
+          className="portfolio-btns"
         >
           Download PDF
         </a>
+
         <a
-          href="/QuaidTahirPortfolio.doc"
+          href="/QuaidTahirPortfolio.docc"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition"
+          className="portfolio-btns"
         >
           Download DOC
         </a>

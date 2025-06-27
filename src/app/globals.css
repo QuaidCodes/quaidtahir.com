@@ -29,9 +29,17 @@ body,
 }
 
 .portfolio-headings {
-  @apply p-1 pl-2 text-2xl font-semibold bg-portfolio-headings mb-2 text-white;
+  @apply text-lg md:text-2xl font-semibold text-gray-200 uppercase tracking-wide md:mb-1;
+}
+
+.portfolio-subheadings {
+  @apply md:text-xl text-sm md:font-bold md:mb-1 text-white;
 }
 
 .portfolio-content {
-  @apply text-portfolio-content text-lg;
+  @apply text-sm md:text-lg text-gray-400 max-w-3xl;
+}
+
+.portfolio-btns {
+  @apply inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition text-nowrap text-center;
 }
