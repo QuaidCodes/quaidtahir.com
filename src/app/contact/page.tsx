@@ -100,8 +100,7 @@ export default function Contact() {
               <strong>Email:</strong> quaidtahir@quaidtahir.com
             </p>
             <p>
-              <strong>Availability:</strong> Open to freelance and full-time
-              opportunities
+              <strong>Availability:</strong> Currently unavailable until February 2026.
             </p>
           </div>
 
