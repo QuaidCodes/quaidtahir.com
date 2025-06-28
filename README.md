@@ -2,7 +2,7 @@
 
 This is my personal portfolio website designed to showcase my skills, projects, and experience through a clean and modern user interface.
 
-## Technology Stack
+## Tech Stack
 
 - **Next.js:** Used as the React framework to enable server-side rendering and static site generation for improved performance and SEO  
 - **React:** Core library for building the interactive user interface components  
