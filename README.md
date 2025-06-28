@@ -4,11 +4,17 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 
 ## Tech Stack
 
-- **Next.js:** Used as the React framework to enable server-side rendering and static site generation for improved performance and SEO  
-- **React:** Core library for building the interactive user interface components  
-- **Tailwind CSS:** Utility-first CSS framework applied for rapid, consistent styling and responsive design  
-- **TypeScript:** Adds static typing to JavaScript to improve code quality and developer experience  
-- **Framer Motion:** Utilized for smooth, declarative animations and transitions (optional)  
+- **Next.js**  
+- **React** 
+- **Tailwind CSS**
+- **TypeScript** 
+- **Framer Motion**
+- **Resend**
+
+## Hosting
+- **Vercel**  
+- **NameCheap**  
+  
 
 ## What I Did
 
