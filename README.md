@@ -2,14 +2,6 @@
 
 This is my personal portfolio website designed to showcase my skills, projects, and experience through a clean and modern user interface.
 
-## Features
-
-- Fully responsive layout that works seamlessly on both desktop and mobile devices  
-- Smooth animations and transitions to enhance user experience  
-- Dedicated project showcase section with detailed descriptions  
-- Contact form with client-side validation for easy communication  
-- Support for light and dark mode themes (optional)  
-
 ## Technology Stack
 
 - **Next.js:** Used as the React framework to enable server-side rendering and static site generation for improved performance and SEO  
