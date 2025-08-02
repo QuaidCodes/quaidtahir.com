@@ -117,10 +117,12 @@ export default function Portfolio() {
           <article>
             <h3 className="portfolio-subheadings">Portfolio Website Project</h3>
             <p className="text-sm md:text-lg">
-              <Link href="/" className="underline md:hover:underline">
-                quaidtahir.com
+              <Link href="/" className="md:hover:underline">
+                www.quaidtahir.com
               </Link>{" "}
-              — Built with Next.js, TypeScript, Tailwind CSS
+              <span className="text-gray-400">
+                — Built with Next.js, TypeScript, Tailwind CSS
+              </span>
             </p>
             <time className="text-sm text-gray-600 mbblock">June 2025</time>
 
@@ -190,6 +192,11 @@ export default function Portfolio() {
 
             <ul className="list-disc list-inside space-y-2 portfolio-content">
               <li>
+                Resolved 80+ IT tickets weekly within SLAs, reducing issue
+                resolution time by 100% and improving end-user satisfaction.
+              </li>
+
+              <li>
                 Provide technical support to 700+ employees, troubleshooting
                 hardware and software issues to maintain seamless IT operations.
               </li>
@@ -204,11 +211,6 @@ export default function Portfolio() {
                 Managed IT infrastructure including installs, network configs,
                 and system upgrades, ensuring 99.9% uptime and security
                 compliance.
-              </li>
-
-              <li>
-                Resolved 50+ IT tickets weekly within SLAs, reducing issue
-                resolution time by 99% and improving end-user satisfaction.
               </li>
             </ul>
           </article>
@@ -249,6 +251,31 @@ export default function Portfolio() {
             </li>
 
             <li className="font-semibold">CompTIA Security+ (2025)</li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={6}
+          variants={fadeIn}
+        >
+          <h2 className="portfolio-headings">Relevant Coursework</h2>
+          <ul className="list-disc list-inside space-y-1 portfolio-content text-lg">
+            <li className="font-semibold">
+              Applied Algorithms and Reasoning – D795
+            </li>
+
+            <li className="font-semibold">Software Engineering – D284</li>
+
+            <li className="font-semibold">
+              Software Design and Quality Assurance – D480
+            </li>
+
+            <li className="font-semibold">Computer Architecture – C952</li>
+
+            <li className="font-semibold">Formal Languages Overview – D793</li>
           </ul>
         </motion.div>
       </section>

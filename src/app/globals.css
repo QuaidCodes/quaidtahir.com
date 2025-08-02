@@ -33,7 +33,7 @@ body,
 }
 
 .portfolio-subheadings {
-  @apply md:text-xl text-sm md:font-bold md:mb-1 text-white;
+  @apply md:text-xl text-sm md:font-bold md:mb-1 text-gray-400;
 }
 
 .portfolio-content {

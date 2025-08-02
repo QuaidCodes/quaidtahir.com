@@ -190,16 +190,5 @@ export const projects: TimelineEntry[] = [
       </div>
     ),
   },
-  {
-    title: "Big Launch",
-    content: (
-      <div>
-        <p>Lauch for Site builder</p>
 
-        <a href="/portfolio" className="text-blue-500 hover:underline">
-          See updates →
-        </a>
-      </div>
-    ),
-  },
 ];
