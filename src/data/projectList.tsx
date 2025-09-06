@@ -1,4 +1,5 @@
 import { TimelineEntry } from "@/lib/timeline";
+import Link from "next/link";
 
 export const projects: TimelineEntry[] = [
   {
@@ -18,6 +19,7 @@ export const projects: TimelineEntry[] = [
           reflects my focus on building scalable, maintainable, and user-centric
           web experiences.
         </p>
+        <Link href="/changelog" className="text-blue-500 hover:underline">Change log</Link>
       </div>
     ),
   },
