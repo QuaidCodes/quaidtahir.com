@@ -22,9 +22,7 @@ export default function Changelog() {
                 <p className="font-bold">{item.title}</p>
                 <p className="italic text-sm">{item.date}</p>
                 <p className="italic">{item.changes.description}</p>
-                <p className="bg-red-500 w-fit px-2 rounded-full text-sm">
-                  {item.changes.type}
-                </p>
+                <p className="bg-red-500 w-fit px-2 rounded-full text-sm">In Progress</p>
               </motion.div>
             );
           })}
@@ -44,8 +42,7 @@ export default function Changelog() {
                 <p className="font-bold">{item.title}</p>
                 <p className="italic text-sm">{item.date}</p>
                 <p className="italic">{item.changes.description}</p>
-                <p className="bg-red-500 w-fit px-2 rounded-full text-sm">
-                  {item.changes.type}
+                <p className="bg-green-400 w-fit px-2 rounded-full text-sm">Completed
                 </p>
               </motion.div>
             );
