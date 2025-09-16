@@ -197,7 +197,7 @@ export default function Portfolio() {
               </li>
 
               <li>
-                Provide technical support to 700+ employees, troubleshooting
+                Provide technical support to 700+ users, troubleshooting
                 hardware and software issues to maintain seamless IT operations.
               </li>
 
