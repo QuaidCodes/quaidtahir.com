@@ -13,6 +13,7 @@
     "@heroui/system": "^2.4.17",
     "@heroui/tabs": "^2.2.18",
     "@heroui/theme": "^2.4.17",
+    "@prisma/client": "^6.16.2",
     "@tabler/icons-react": "^3.34.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",
@@ -37,6 +38,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
+    "prisma": "^6.16.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
