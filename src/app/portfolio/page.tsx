@@ -13,6 +13,27 @@ const fadeIn: Variants = {
 };
 
 export default function Portfolio() {
+  const techStack = [
+    { name: "Python", color: "bg-yellow-200 dark:bg-yellow-500 text-black" },
+    { name: "Java", color: "bg-red-200 dark:bg-red-500 text-black" },
+    { name: "C++", color: "bg-purple-200 dark:bg-purple-500 text-black" },
+    { name: "Kubernetes", color: "bg-cyan-200 dark:bg-cyan-500 text-black" },
+    { name: "Docker", color: "bg-sky-200 dark:bg-sky-500 text-black" },
+    { name: "Next.js", color: "bg-gray-200 dark:bg-gray-600 text-black" },
+    {
+      name: "Node.js / Express",
+      color: "bg-green-200 dark:bg-green-500 text-black",
+    },
+    { name: "MySQL", color: "bg-amber-200 dark:bg-amber-500 text-black" },
+    { name: "PostgreSQL", color: "bg-rose-200 dark:bg-rose-500 text-black" },
+    { name: "React", color: "bg-blue-200 dark:bg-blue-500 text-black" },
+    { name: "Tailwind CSS", color: "bg-teal-200 dark:bg-teal-500 text-black" },
+    {
+      name: "TypeScript",
+      color: "bg-indigo-200 dark:bg-indigo-500 text-black",
+    },
+  ];
+
   return (
     <main className="min-h-screen px-6 py-16 w-full max-w-4xl mx-auto selection:bg-gray-700 selection:text-white">
       <motion.header
@@ -98,11 +119,28 @@ export default function Portfolio() {
           variants={fadeIn}
         >
           <h2 className="portfolio-headings">Technical Skills</h2>
-          <p className="text-gray-500 font-mono md:tracking-wide select-text">
-            Python &nbsp;|&nbsp; React &nbsp;|&nbsp; Node.js &nbsp;|&nbsp;
-            Next.js &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; TypeScript
-            &nbsp;|&nbsp; Java &nbsp;|&nbsp; C++
-          </p>
+          <div className="flex flex-wrap gap-2 font-mono md:tracking-wide select-text">
+            {techStack.map((tech) => (
+              <span
+                key={tech.name}
+                className="
+            bg-black bg-opacity-60 
+            text-gray-200 
+            px-4 py-1.5 
+            rounded-full 
+            font-mono 
+            text-sm 
+            select-text
+            backdrop-blur-sm
+            hover:bg-opacity-80
+            transition
+            cursor-default
+          "
+              >
+                {tech.name}
+              </span>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
@@ -197,7 +235,7 @@ export default function Portfolio() {
               </li>
 
               <li>
-                Provide technical support to 700+ users, troubleshooting
+                Provide technical support to 1000+ users, troubleshooting
                 hardware and software issues to maintain seamless IT operations.
               </li>
 
@@ -240,7 +278,7 @@ export default function Portfolio() {
           custom={6}
           variants={fadeIn}
         >
-          <h2 className="portfolio-headings">Achievements</h2>
+          <h2 className="portfolio-headings">Certifications</h2>
           <ul className="list-disc list-inside space-y-1 portfolio-content text-lg">
             <li className="font-semibold">
               Foundation: Data, Data, Everywhere - Amazon, Coursera (2022)
@@ -250,7 +288,16 @@ export default function Portfolio() {
               Amazon Web Services - Amazon, Coursera (2020)
             </li>
 
-            <li className="font-semibold">CompTIA Security+ (2025)</li>
+            <li className="font-semibold">CompTIA CCNA (2025)</li>
+
+            <li className="font-semibold">AWS Cloud Practitioner(2025)</li>
+            {/* 
+            <li className="font-semibold">
+              AWS Solutions Architect - Associate (2025)
+            </li>
+            <li className="font-semibold">
+              AWS Machine Learning Engineer - Associate(2025)
+            </li> */}
           </ul>
         </motion.div>
 
@@ -266,16 +313,16 @@ export default function Portfolio() {
             <li className="font-semibold">
               Applied Algorithms and Reasoning – D795
             </li>
-
             <li className="font-semibold">Software Engineering – D284</li>
-
             <li className="font-semibold">
               Software Design and Quality Assurance – D480
             </li>
-
             <li className="font-semibold">Computer Architecture – C952</li>
-
             <li className="font-semibold">Formal Languages Overview – D793</li>
+            <li className="font-semibold">Discrete Mathematics II – C960</li>
+            <li className="font-semibold">
+              Operating Systems for Computer Scientists – D686
+            </li>
           </ul>
         </motion.div>
       </section>
