@@ -192,7 +192,7 @@ export default function Portfolio() {
 
             <ul className="list-disc list-inside space-y-2 portfolio-content">
               <li>
-                Resolved 80+ IT tickets weekly within SLAs, reducing issue
+                Resolved 85+ IT tickets weekly within SLAs, reducing issue
                 resolution time by 100% and improving end-user satisfaction.
               </li>
 
