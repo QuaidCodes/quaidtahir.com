@@ -12,7 +12,7 @@ export default function LoginPage() {
     e.preventDefault();
     setLoading(true);
 
-    // Replace this with your real login API call
+    // API call -- set up backend
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     console.log("Email:", email);
@@ -69,13 +69,6 @@ export default function LoginPage() {
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
-
-        <p className="mt-6 text-center text-sm text-gray-400">
-          Don’t have an account?{" "}
-          <a href="/register" className="text-indigo-400 hover:underline">
-            Sign up
-          </a>
-        </p>
       </motion.div>
     </div>
   );
