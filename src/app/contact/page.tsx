@@ -195,7 +195,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="w-full py-3 rounded-md font-semibold bg-black text-white hover:bg-gray-900 transition disabled:opacity-50"
+              className="w-full py-3 rounded-md font-semibold bg-black text-white hover:bg-gray-900 transition duration-300 disabled:opacity-50"
             >
               {status === "submitting" ? (
                 <span className="flex items-center justify-center gap-2">

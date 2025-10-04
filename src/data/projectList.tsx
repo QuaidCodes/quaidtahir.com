@@ -24,7 +24,7 @@ export const projects: TimelineEntry[] = [
     ),
   },
   {
-    title: "August 2025",
+    title: "July 2025",
     content: (
       <div>
         <h3 className="text-2xl font-semibold">Web Site Builder</h3>
@@ -105,7 +105,7 @@ export const projects: TimelineEntry[] = [
     ),
   },
   {
-    title: "July 2025",
+    title: "August 2025",
     content: (
       <div>
         <h3 className="text-2xl font-semibold">

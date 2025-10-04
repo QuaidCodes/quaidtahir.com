@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import DropdownMenu from "./Dropdown";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -13,7 +14,8 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white px-6 py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="text-2xl font-bold tracking-wide">Quaid Tahir</div>
+        {/* <div className="text-2xl font-bold tracking-wide">Quaid Tahir</div> */}
+        <DropdownMenu />
 
         <div className="flex gap-6 text-sm font-medium">
           {navItems.map(({ href, label }) => (

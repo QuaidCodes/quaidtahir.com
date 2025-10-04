@@ -12,7 +12,6 @@ export default function Header() {
     { href: "/works", label: "Works" },
     // { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
-    { href: "/login", label: "Login" },
   ];
 
   const pathname = usePathname();
