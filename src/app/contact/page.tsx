@@ -100,7 +100,7 @@ export default function Contact() {
               <strong>Email:</strong> quaidtahir@quaidtahir.com
             </p>
             <p>
-              <strong>Availability:</strong> Currently unavailable until February 2026.
+              <strong>Availability:</strong> Currently unavailable until June 2026.
             </p>
           </div>
 
