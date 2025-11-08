@@ -231,12 +231,27 @@ export default function Portfolio() {
             <ul className="list-disc list-inside space-y-2 portfolio-content">
               <li>
                 Resolved 85+ IT tickets weekly within SLAs, reducing issue
-                resolution time by 100% and improving end-user satisfaction.
+                resolution time by 100% and driving measurable improvements in
+                end-user satisfaction and productivity.
               </li>
 
               <li>
-                Provide technical support to 1000+ users, troubleshooting
-                hardware and software issues to maintain seamless IT operations.
+                Executed multiple Change Management (CM) projects—including UPS
+                battery replacements, MDF/IDF FCPIMMS, and AP lifecycle
+                upgrades—resulting in increased infrastructure reliability and
+                reduced downtime.
+              </li>
+
+              <li>
+                Partnered with vendors to plan and execute Change Management
+                (CM) activities with precision, minimizing downtime and ensuring
+                on-time project delivery across multiple sites.
+              </li>
+
+              <li>
+                Provided technical support to 1,000+ users and devices, troubleshooting
+                complex hardware and software issues to sustain continuous
+                business operations and maintain 100% system uptime.
               </li>
 
               <li>
@@ -246,9 +261,10 @@ export default function Portfolio() {
               </li>
 
               <li>
-                Managed IT infrastructure including installs, network configs,
-                and system upgrades, ensuring 99.9% uptime and security
-                compliance.
+                Monitored network traffic and performance metrics using tools
+                such as Hylas and Imperium, proactively identifying and
+                resolving issues related to high-severity events to maintain
+                uninterrupted operations.
               </li>
             </ul>
           </article>
