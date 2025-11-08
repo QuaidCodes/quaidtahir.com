@@ -1,8 +1,11 @@
 "use client";
 
-import SocialWheel from "@/components/SocialWheel";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { z } from "zod";
+
+import SocialWheel from "@/components/SocialWheel";
+import QR_LinkedIn from "@/assets/LinkedInQRCode.png";
 
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required!").max(20),
@@ -100,11 +103,14 @@ export default function Contact() {
               <strong>Email:</strong> quaidtahir@quaidtahir.com
             </p>
             <p>
-              <strong>Availability:</strong> Currently unavailable until June 2026.
+              <strong>Availability:</strong> Currently unavailable until June
+              2026.
             </p>
           </div>
 
           <SocialWheel />
+
+          <Image src={QR_LinkedIn} alt="" className="rounded h-30 w-30" />
         </div>
 
         <div className="bg-[#f5f5f5] text-black dark:bg-white dark:text-black shadow-2xl rounded-2xl p-8 space-y-6 border dark:border-zinc-300 sm:order-2 order-1">
